@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PiWebMeshModel_Example' do
+  pod 'PiWebMeshModel', :path => '../'
+
+  target 'PiWebMeshModel_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
