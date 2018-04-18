@@ -1,12 +1,16 @@
 target 'PiWebMeshModel_Example' do
   use_frameworks!
   platform :ios, '11.0'
-    
-  pod 'objective-zip', '~> 1.0'
+
+def standard_pods
   pod 'PiWebMeshModel', :path => '../'
+end
+
+  pod 'objective-zip', '~> 1.0'
+  standard_pods
 
   target 'PiWebMeshModel_Tests' do
-    inherit! :search_paths
+    standard_pods
 
     
   end

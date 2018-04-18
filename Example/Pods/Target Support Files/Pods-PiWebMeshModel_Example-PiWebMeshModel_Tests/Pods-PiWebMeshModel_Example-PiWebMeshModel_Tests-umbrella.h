@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_PiWebMeshModel_TestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_PiWebMeshModel_TestsVersionString[];
+FOUNDATION_EXPORT double Pods_PiWebMeshModel_Example_PiWebMeshModel_TestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_PiWebMeshModel_Example_PiWebMeshModel_TestsVersionString[];
 
