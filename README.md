@@ -1,10 +1,5 @@
 # PiWebMeshModel
 
-[![CI Status](http://img.shields.io/travis/David Dombrowe/PiWebMeshModel.svg?style=flat)](https://travis-ci.org/David Dombrowe/PiWebMeshModel)
-[![Version](https://img.shields.io/cocoapods/v/PiWebMeshModel.svg?style=flat)](http://cocoapods.org/pods/PiWebMeshModel)
-[![License](https://img.shields.io/cocoapods/l/PiWebMeshModel.svg?style=flat)](http://cocoapods.org/pods/PiWebMeshModel)
-[![Platform](https://img.shields.io/cocoapods/p/PiWebMeshModel.svg?style=flat)](http://cocoapods.org/pods/PiWebMeshModel)
-
 <img style="display:block;margin:auto;" src="Documentation/Logo.png">
 
 ## Overview
@@ -42,7 +37,7 @@ The MeshModel object is a SceneKitNode and can be used in any SceneKit scene.
 
 ## Example Project
 
-An example project is included with this repository.  To run the example project, clone the repo and run `pod install` from the Example directory first.
+An example project and examples for MeshModel files are included with this repository.  To run the example project, clone the repository and run `pod install` from the Example directory first.
 
 <img style="display:block;margin:auto;" src="Documentation/Example.png">
 
