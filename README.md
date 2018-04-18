@@ -5,11 +5,15 @@
 [![License](https://img.shields.io/cocoapods/l/PiWebMeshModel.svg?style=flat)](http://cocoapods.org/pods/PiWebMeshModel)
 [![Platform](https://img.shields.io/cocoapods/p/PiWebMeshModel.svg?style=flat)](http://cocoapods.org/pods/PiWebMeshModel)
 
-## Example
+<img style="display:block;margin:auto;" src="Documentation/Logo.png">
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## Overview
+
+PiWebMeshModel is a framework to read CAD visualization data in MeshModel format for the ZEISS PiWeb quality data management system. To read more about the MeshModel format: https://github.com/ZEISS-PiWeb/PiWeb-MeshModel
 
 ## Requirements
+
+* iOS 11
 
 ## Installation
 
@@ -20,10 +24,32 @@ it, simply add the following line to your Podfile:
 pod 'PiWebMeshModel'
 ```
 
+## Usage
+
+```Swift
+import SceneKit
+import PiWebMeshModel
+
+let model = MeshModel.init(filename: "MetalPart.meshModel")
+
+let scene = SCNScene()
+scene.rootNode.addChildNode(model)
+sceneView.scene = scene
+
+```
+
+The MeshModel object is a SceneKitNode and can be used in any SceneKit scene.
+
+## Example Project
+
+An example project is included with this repository.  To run the example project, clone the repo and run `pod install` from the Example directory first.
+
+<img style="display:block;margin:auto;" src="Documentation/Example.png">
+
 ## Author
 
 David Dombrowe, dombrowe@zeiss-izm.de
 
 ## License
 
-PiWebMeshModel is available under the MIT license. See the LICENSE file for more info.
+PiWebMeshModel is available under the BSD license. See the LICENSE file for more info.

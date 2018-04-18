@@ -1,0 +1,6 @@
+framework module PiWebMeshModel {
+  umbrella header "PiWebMeshModel-umbrella.h"
+
+  export *
+  module * { export * }
+}

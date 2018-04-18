@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'PiWebMeshModel'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of PiWebMeshModel.'
+  s.summary          = 'Framework to read CAD visualization data in MeshModel format for the ZEISS PiWeb quality data management system.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+PiWebMeshModel is a framework to read CAD visualization data in MeshModel format for the ZEISS PiWeb quality data management system.
                        DESC
 
-  s.homepage         = 'https://github.com/David Dombrowe/PiWebMeshModel'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.homepage         = 'https://github.com/ZEISS-PiWeb/PiWebMeshModel'
+  s.license          = { :type => 'BSD', :file => 'LICENSE' }
   s.author           = { 'David Dombrowe' => 'dombrowe@zeiss-izm.de' }
-  s.source           = { :git => 'https://github.com/David Dombrowe/PiWebMeshModel.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'PiWebMeshModel/Classes/**/*'
+  s.source       = { :path => '.' }
+  # s.source           = { :git => 'https://github.com/ZEISS-PiWeb/PiWebMeshModel', :tag => s.version.to_s }
+  s.ios.deployment_target = '11.0'
+  s.swift_version = '4.1'
+  s.source_files = 'PiWebMeshModel/Classes/*', 'PiWebMeshModel/Classes/**/*'
+  s.dependency "objective-zip", "~> 1.0"
   
-  # s.resource_bundles = {
-  #   'PiWebMeshModel' => ['PiWebMeshModel/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

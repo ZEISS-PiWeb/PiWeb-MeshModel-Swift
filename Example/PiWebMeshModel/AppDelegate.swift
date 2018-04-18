@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  PiWebMeshModel
 //
-//  Created by David Dombrowe on 04/13/2018.
-//  Copyright (c) 2018 David Dombrowe. All rights reserved.
+//  Created by Daniel Flemming on 11.04.18.
+//  Copyright © 2018 Carl Zeiss Innovationszentrum für Messtechnik GmbH. All rights reserved.
 //
 
 import UIKit

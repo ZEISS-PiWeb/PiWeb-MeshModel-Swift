@@ -1,0 +1,1249 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0353B5A885C7C1400D08D6421FC3F17C /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = F4B614E6AD7675711AB9ABC442B89595 /* zutil.c */; };
+		03BDFA318C0CF6DE7EF91C8BA48E5163 /* OZZipWriteStream+Internals.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B1C063B50CECEC1E9CE26A7EE4AFA30 /* OZZipWriteStream+Internals.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		04FB8FD1BDCBC7AD752412AE16C89D26 /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 68F6B6464A1DA46BAC9AFD167FB8CC81 /* compress.c */; };
+		09D739831320910F669BE8DCAA04B084 /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = E66E36041D360043CA09D0A0B40FC0DE /* crc32.c */; };
+		0EFEE7A2F17567AF204103D78981E14F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA2FC92BEED70CA307DF0DCBB174F91 /* Foundation.framework */; };
+		0F9BED6C2B244E3A54ABE9015DE0BFA4 /* OZZipWriteStream.h in Headers */ = {isa = PBXBuildFile; fileRef = ECA73250E67FA6CE8413A2D7D4BADA2C /* OZZipWriteStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11DC0AE5D100F4594ECBB845618D6F5E /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = 435DF9FA285F91EC27F01CA34A076039 /* inffast.c */; };
+		13035EB46F849D3387F6E51531212A40 /* OZZipException+Internals.h in Headers */ = {isa = PBXBuildFile; fileRef = 363924D17A621BA38E31C1A9CF79DE02 /* OZZipException+Internals.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1623C3C9825C9F242F5B132DF7F4E5E7 /* gzwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = F175A7BAE6DC12526807049E3D7DC3D2 /* gzwrite.c */; };
+		1A6E451A877F8A686FC350ADC6CCAD6A /* objective-zip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CD36E3BEE2237A49AB087B4A6601CA5 /* objective-zip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F307DAB3A927F872FE2B7E616CCA6E7 /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = 3E96453342300825E5C328BDC8544966 /* inftrees.c */; };
+		2638F4C3511927F4699943C7979A07D1 /* gzclose.c in Sources */ = {isa = PBXBuildFile; fileRef = A42B0294EC0AAA62E671E62DD73C528A /* gzclose.c */; };
+		2788C6173AAD485D86CDF7C647F4FF9E /* OZZipReadStream+Internals.h in Headers */ = {isa = PBXBuildFile; fileRef = 09BF46B88807C528AB0B47D95546D84C /* OZZipReadStream+Internals.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2C6770BF5EBC7687E64260FFED009EBE /* OZZipReadStream+Standard.h in Headers */ = {isa = PBXBuildFile; fileRef = 61BD3E43F675B8DC2E51B1680E01097E /* OZZipReadStream+Standard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30EB88A918609E866214E483DED58EA7 /* NSData+CRC32.h in Headers */ = {isa = PBXBuildFile; fileRef = E417775D711518205164E0CC4D3925B0 /* NSData+CRC32.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33B293D2AB9862A828D5361D1C8A2AA3 /* OZZipCompressionLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = C9625F29B4C01B985E9A7B472CCE4329 /* OZZipCompressionLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38B8F7F3AC0F6B72C2361D1A753EBD3D /* OZFileInZipInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7354C81050AE5458D0739F95CF9CD7D5 /* OZFileInZipInfo.m */; };
+		3BDD4EA8FE234F0C75CB6B10B3B64DF6 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = B91191A0A4049CCBB00AE33C69D28834 /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		44FC87625E781B967A47A52B1A4DB56C /* OZFileInZipInfo+Internals.h in Headers */ = {isa = PBXBuildFile; fileRef = 972037EA68A8A0EAB650B09C455092C1 /* OZFileInZipInfo+Internals.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		484F7C02B1899BB601AA260F88B62BDD /* inffixed.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3AFD5FF90E42AE9C5F84B48910B65C /* inffixed.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4C60503CF09A44618F38E84AB888CBB8 /* OZZipException.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CCB91D30A7D324DB876DE54A531C3F /* OZZipException.m */; };
+		56CE759C7E42399B8E17D6A8F44E5B66 /* Pods-PiWebMeshModel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD3EA75AE142957406E133A44FBB592 /* Pods-PiWebMeshModel_Example-dummy.m */; };
+		57032812EBAFBACE2B5F463A0049AF2F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD9B15B8FBE42C83F4A9C7AF906503B /* Logger.swift */; };
+		5C4E1914D657576B091127D36A029A66 /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = 976938E53E237E00A0D6FB548B221ED9 /* trees.c */; };
+		5FAB070E8D885B95D3123D9FADA4CD43 /* gzlib.c in Sources */ = {isa = PBXBuildFile; fileRef = B8282BDE7B528A6392D64B39897D93D0 /* gzlib.c */; };
+		6170360ADCB36967DF4264F5600CEF64 /* inftrees.h in Headers */ = {isa = PBXBuildFile; fileRef = F3D502CCE875B56ECCCCD1B3182C62EB /* inftrees.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		64861ECFA2EF38D1831007003BFC5B01 /* objective_zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DBC6A69E794A5A60C3693C86A776F60 /* objective_zip.framework */; };
+		6BD2D8AB15C495BDA836F834541122C3 /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = FA3F617AA43CA72058B4D87C87509B41 /* inflate.c */; };
+		6F0949E324A0DFA6253BA62475B5BAF1 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 2AEB5A81B2BF2FD88579613AC83AFF1B /* zip.c */; };
+		79A0AECBD76D463E81B40550F00F414D /* OZZipReadStream+NSError.h in Headers */ = {isa = PBXBuildFile; fileRef = D38F8AEFC7F8B20633BFB7BDACD9663E /* OZZipReadStream+NSError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		804C0B90736611716FD1473FD4432042 /* Pods-PiWebMeshModel_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48CB2344F3C77996D02A68C1AB6B3666 /* Pods-PiWebMeshModel_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8162BD35EDB2E38E93BAA6D4C837AC7C /* OZZipFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F884E32EC629FE5EF84A91EB72455FA7 /* OZZipFile.m */; };
+		83B6A642102F2513002DB4FACB569A43 /* MeshModelMeshNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DBB56E6531E2920436AEC402CAA8CF /* MeshModelMeshNode.swift */; };
+		854C941F76324DD707424773D5DFEDD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA2FC92BEED70CA307DF0DCBB174F91 /* Foundation.framework */; };
+		86BF80F2FF688E49401832DBEFA19518 /* OZFileInZipInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F62833BED6794DDB0954971FF3577572 /* OZFileInZipInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87FF64AA2C08EF9D11FDB2DD2A16192B /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 6701D384E70E6B78D279437385ABFC45 /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8AC9D4231A4CF33B60E3D63B03BFF100 /* OZZipReadStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 44706997203EB2EBD44FD6DFB7AF38AF /* OZZipReadStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BB167D063862378FE36B246C373EFCE /* gzread.c in Sources */ = {isa = PBXBuildFile; fileRef = 15356E7BC5D77473B30759C2C1B83EC4 /* gzread.c */; };
+		939201F9B4CF3B503622CE6C8F2385D4 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FA9A9F6265811E762735FD1F6F065B6 /* unzip.c */; };
+		9735EF60CDE84FDABEDF9DE9A2219627 /* crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = BE9C9FF7CED4E5CB8EB30DD6D94C7DDF /* crypt.c */; };
+		9A1F4BB3CC0AF35D7DD067B8A0F3105E /* OZZipFile+NSError.h in Headers */ = {isa = PBXBuildFile; fileRef = 588C880B03BE6001848CC4A2C837D11D /* OZZipFile+NSError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D0E86958F57E64B87BA45D6CC122E09 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 5872617FD7AA29BE9EBD08DD421E818A /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9F9B5738FCF9A2D701F64203DFEFD17F /* MeshModelEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD18A8912BBA32ABED6FF685753CCB2 /* MeshModelEdge.swift */; };
+		A02A868210F8C14C65241C984BF484B0 /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = A2BFC606BA6448151242DBC10CA075BA /* adler32.c */; };
+		A0C593DD4A3AB62E4F2375E538CAD2D6 /* inflate.h in Headers */ = {isa = PBXBuildFile; fileRef = EA02A70193F847FB2E1F2537220D4867 /* inflate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A0D76AB4BA0D364F1CF0E86032383790 /* Objective-Zip.h in Headers */ = {isa = PBXBuildFile; fileRef = E9444DD56B2A1E8288F578044C8D7FA0 /* Objective-Zip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3775EABA52E62C1940BC0EB9FC23521 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 9739666CA9409E99068ACF4DE81A42C3 /* ioapi.c */; };
+		A3DF75B16116B5ACCDD53D6C4F31A8B8 /* Pods-PiWebMeshModel_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DC040239C61A48680A1FE90EAB89E3 /* Pods-PiWebMeshModel_Tests-dummy.m */; };
+		A41BDAA48C7A6C1AB9D7EA7E6624C8BB /* MeshModelEdgeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8CC577F1DAE641C8178B2599A337BD /* MeshModelEdgeNode.swift */; };
+		A5E3104205DAC9D77435C0902ED0281C /* MeshModelMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8925980A59ED4C7DAB9A2D307364F27D /* MeshModelMesh.swift */; };
+		A7CF4149006AE1524BD4414E02AFAC7D /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = A672338703D91BD61540911CEB657FD1 /* infback.c */; };
+		A8A9DE5350B181C0F7F4F9593F714E13 /* inffast.h in Headers */ = {isa = PBXBuildFile; fileRef = C933AA94BCD1A8C39F7626723A9FDEF4 /* inffast.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A8C567DC14078C8849B65BCCAA4D5343 /* OZZipWriteStream+NSError.h in Headers */ = {isa = PBXBuildFile; fileRef = D803D43D61F6DA54588DC1DD5BAB5C73 /* OZZipWriteStream+NSError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A935F0C39135767EB77CF427166FBE65 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 34B29238F834398F72F7A98E43D31C4A /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A9FC29340ABBB51DF38A8732D1E16951 /* NSDate+DOSDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BAED8D6745D6BA242198C8A0E6D69D0 /* NSDate+DOSDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA6734842080B6A60085914D /* MeshModelMetadataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6734832080B6A60085914D /* MeshModelMetadataParser.swift */; };
+		AFEFCE59DB1145A66548DFAD9D60D9EE /* MeshModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01332286B965602D4686F7551194D822 /* MeshModel.swift */; };
+		B3BC1ED623D25098E37004B355A03264 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA2FC92BEED70CA307DF0DCBB174F91 /* Foundation.framework */; };
+		B3EF01036EB751518288166693575506 /* crc32.h in Headers */ = {isa = PBXBuildFile; fileRef = 7686C0F49B2BF2BC66FCBCCE871D5294 /* crc32.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B5E35B2E0369897C8F201F0132892A33 /* NSDate+DOSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1779B8ED0CC8B7818FF1BC8A39200171 /* NSDate+DOSDate.m */; };
+		B61239F84FDFC34A8F5797A7E912A6C5 /* Pods-PiWebMeshModel_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DCF40C91EC97B4519FF983B1F6A8D0EE /* Pods-PiWebMeshModel_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF5D5178D6B5766550725F39E1214472 /* UUIDExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41F4A9E56F797C69B90F62FCE3C111 /* UUIDExtension.swift */; };
+		BFC70B17E690ABCA0D8333BA4B17CD53 /* PiWebMeshModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F1354B2685DD162D5A61F88B65F765 /* PiWebMeshModel-dummy.m */; };
+		C9C66909D6D3F0DAB7E19767760B7D22 /* OZZipFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B3A065F6652FAC8F00E2B530E467C1 /* OZZipFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCC07BADFE2239EB3F374BAF62D100D3 /* zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = C698509E1F528F4B61BA7BAC8F29BE2C /* zlib.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CFBC7D68A4196774BA9F95FB8C368823 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2191D89121672EE1E849E525BF7E925 /* DataExtension.swift */; };
+		D212AADB366F3A503AE4633658B2F86B /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 48D1C95DCE0CC0EAA91CA399262ACB44 /* deflate.c */; };
+		D25470E12A8CD7A000DEBC85F5EB8B68 /* OZZipFileMode.h in Headers */ = {isa = PBXBuildFile; fileRef = EE81B413B50301513F0C458444A678DE /* OZZipFileMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7BF6860756CF57BDB1D32EBE92D9191 /* zutil.h in Headers */ = {isa = PBXBuildFile; fileRef = F4153866B8317513622DDCF91ED3705C /* zutil.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DA67512C4ED9B88E7BE59ACCE5E55BDD /* OZZipWriteStream.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E079E63664F192A5D454EDCCF2345E /* OZZipWriteStream.m */; };
+		DA9515691B0F06E9B8F7F83BC51F8BF8 /* objective-zip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F2358E17B12529D07219674A386364 /* objective-zip-dummy.m */; };
+		E2C0CBCB752B9DD2CB2D0E3AD9F74451 /* NSData+CRC32.m in Sources */ = {isa = PBXBuildFile; fileRef = 828588C50E04A6752BB0EFE308720FDF /* NSData+CRC32.m */; };
+		E60CF8152F548EEFD304CC8D4FF882B1 /* OZZipReadStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF08A753104739278712D79E00B4EBE /* OZZipReadStream.m */; };
+		E6F50C4A36E3598245EF08DEF07AEAAD /* zconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 10F43C22E5B9C580249FF0A5E88405CE /* zconf.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EB2885238E5A4831F54642AEFA101BCB /* gzguts.h in Headers */ = {isa = PBXBuildFile; fileRef = F691D1A6AEA34121DBF5998BCE1A5193 /* gzguts.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EE112FBFD92999B3837656A6542E1154 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA2FC92BEED70CA307DF0DCBB174F91 /* Foundation.framework */; };
+		EE99040B52ED11E2173C25597D4AC051 /* deflate.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B204089D7AA29F74FEDCE93CEF3336 /* deflate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F2F111FB87614E71BC55419EF080879E /* PiWebMeshModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB38885CD9A9F30ED734A74B79E37641 /* PiWebMeshModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F51DAA344EE4A1AE4675E55C6E5DB9E4 /* MeshModelMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7176BB8146433B23B58B3174C65C989 /* MeshModelMetadata.swift */; };
+		F68D71B5757C14C40EDF38D8DD2B039D /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588EB7B8231F5BDB7AA09C3539D0193D /* Version.swift */; };
+		F9799D8840679179978BCFC6F3AB7492 /* OZZipException.h in Headers */ = {isa = PBXBuildFile; fileRef = E718B32846F4FA88CAD53EE910AC668F /* OZZipException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE01B0A84A704646F8370083A56CCE5 /* Objective-Zip+NSError.h in Headers */ = {isa = PBXBuildFile; fileRef = C2B275C884DDC0A0D7E5374CBF9A3413 /* Objective-Zip+NSError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDC150F34B16F5AEA66C31B9962E53D7 /* OZZipFile+Standard.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B4C91904EF220763C7927BC5BCD50A /* OZZipFile+Standard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE2A31C3D78CE980AE1FC921E6D4816A /* trees.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A2C85FC8D9BABF8AE153837A7514CDA /* trees.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FE6E93411BA107713EC3F67592C7DFD1 /* OZZipWriteStream+Standard.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ED47220B89F75EABC84783F91D75C08 /* OZZipWriteStream+Standard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF927A2211F1CC30429CADE0F540A46A /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = 6AED55C94EBC46EBF7C4F6CB0761F487 /* uncompr.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D18AC0CEF54A064DD5567EDE959C33F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E86B4251A39C9BEF4F46F34AAA192ED;
+			remoteInfo = PiWebMeshModel;
+		};
+		4C49C51F1025C9911A76044C22A7B134 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9159458680A314483479D68BA39DC9A;
+			remoteInfo = "Pods-PiWebMeshModel_Example";
+		};
+		529C45CE134EDCB0BB5FB2D21BFEF542 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DED8AA45EE4031EF955FD1A42F1421A6;
+			remoteInfo = "objective-zip";
+		};
+		FAC53D21C23ACF9143C8FB2812BA7A3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DED8AA45EE4031EF955FD1A42F1421A6;
+			remoteInfo = "objective-zip";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01332286B965602D4686F7551194D822 /* MeshModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MeshModel.swift; path = PiWebMeshModel/Classes/MeshModel.swift; sourceTree = "<group>"; };
+		09BF46B88807C528AB0B47D95546D84C /* OZZipReadStream+Internals.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OZZipReadStream+Internals.h"; path = "Objective-Zip/OZZipReadStream+Internals.h"; sourceTree = "<group>"; };
+		0E36DF6B3BA296DFA1E01BBCD724592B /* objective-zip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "objective-zip.xcconfig"; sourceTree = "<group>"; };
+		0FCEBC9E25C1D29BF7AD37F12A76CF76 /* PiWebMeshModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PiWebMeshModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FD18A8912BBA32ABED6FF685753CCB2 /* MeshModelEdge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MeshModelEdge.swift; path = PiWebMeshModel/Classes/MeshModelEdge.swift; sourceTree = "<group>"; };
+		10F43C22E5B9C580249FF0A5E88405CE /* zconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zconf.h; path = ZLib/zconf.h; sourceTree = "<group>"; };
+		129E482AE06219C96EBC40C6803A8540 /* Pods-PiWebMeshModel_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PiWebMeshModel_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		12B3A065F6652FAC8F00E2B530E467C1 /* OZZipFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OZZipFile.h; path = "Objective-Zip/OZZipFile.h"; sourceTree = "<group>"; };
+		1362F5C98DC431F8AD23DB53304E8694 /* Pods-PiWebMeshModel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PiWebMeshModel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		15356E7BC5D77473B30759C2C1B83EC4 /* gzread.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = gzread.c; path = ZLib/gzread.c; sourceTree = "<group>"; };
+		1779B8ED0CC8B7818FF1BC8A39200171 /* NSDate+DOSDate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DOSDate.m"; path = "Objective-Zip/NSDate+DOSDate.m"; sourceTree = "<group>"; };
+		17C2A346F36AD64978E55363EEDF4409 /* Pods-PiWebMeshModel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PiWebMeshModel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		18CBB3E5777697C1F6C879C99A161F51 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D7ED900BD69904335B003EB795905F3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1F8EBACC183DB337431790707E7E0DE2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28F1354B2685DD162D5A61F88B65F765 /* PiWebMeshModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PiWebMeshModel-dummy.m"; sourceTree = "<group>"; };
+		2AEB5A81B2BF2FD88579613AC83AFF1B /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = MiniZip/zip.c; sourceTree = "<group>"; };
+		2DBC6A69E794A5A60C3693C86A776F60 /* objective_zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = objective_zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3061CFB1F86ABD78D84E153E2DECB377 /* objective_zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = objective_zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34B29238F834398F72F7A98E43D31C4A /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = MiniZip/unzip.h; sourceTree = "<group>"; };
+		363924D17A621BA38E31C1A9CF79DE02 /* OZZipException+Internals.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OZZipException+Internals.h"; path = "Objective-Zip/OZZipException+Internals.h"; sourceTree = "<group>"; };
+		3B1C063B50CECEC1E9CE26A7EE4AFA30 /* OZZipWriteStream+Internals.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OZZipWriteStream+Internals.h"; path = "Objective-Zip/OZZipWriteStream+Internals.h"; sourceTree = "<group>"; };
+		3BAED8D6745D6BA242198C8A0E6D69D0 /* NSDate+DOSDate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+DOSDate.h"; path = "Objective-Zip/NSDate+DOSDate.h"; sourceTree = "<group>"; };
+		3E96453342300825E5C328BDC8544966 /* inftrees.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = inftrees.c; path = ZLib/inftrees.c; sourceTree = "<group>"; };
+		42B4C91904EF220763C7927BC5BCD50A /* OZZipFile+Standard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OZZipFile+Standard.h"; path = "Objective-Zip/OZZipFile+Standard.h"; sourceTree = "<group>"; };
+		435DF9FA285F91EC27F01CA34A076039 /* inffast.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = inffast.c; path = ZLib/inffast.c; sourceTree = "<group>"; };
+		44706997203EB2EBD44FD6DFB7AF38AF /* OZZipReadStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OZZipReadStream.h; path = "Objective-Zip/OZZipReadStream.h"; sourceTree = "<group>"; };
+		48CB2344F3C77996D02A68C1AB6B3666 /* Pods-PiWebMeshModel_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PiWebMeshModel_Example-umbrella.h"; sourceTree = "<group>"; };
+		48D1C95DCE0CC0EAA91CA399262ACB44 /* deflate.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = deflate.c; path = ZLib/deflate.c; sourceTree = "<group>"; };
+		4A06A634984D4999F50A7B64BF6DDAD8 /* Pods-PiWebMeshModel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PiWebMeshModel_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4D883F59400EC0343D1A70975DFC4EDF /* PiWebMeshModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PiWebMeshModel.xcconfig; sourceTree = "<group>"; };
+		4E9B594A1D69D27A7CB434B3A2DD457E /* Pods_PiWebMeshModel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PiWebMeshModel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		546CDCDFEB6DAA2655C09AF607CDD227 /* PiWebMeshModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PiWebMeshModel-prefix.pch"; sourceTree = "<group>"; };
+		56B1941F8C071E575D10BF375E597B06 /* Pods-PiWebMeshModel_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PiWebMeshModel_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		57339D569E1CBE0FA0BE0EDC4CC58558 /* Pods-PiWebMeshModel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PiWebMeshModel_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		576E684A86087F1B9D8C64E14B460953 /* Pods_PiWebMeshModel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PiWebMeshModel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5872617FD7AA29BE9EBD08DD421E818A /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = MiniZip/ioapi.h; sourceTree = "<group>"; };
+		588C880B03BE6001848CC4A2C837D11D /* OZZipFile+NSError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OZZipFile+NSError.h"; path = "Objective-Zip/OZZipFile+NSError.h"; sourceTree = "<group>"; };
+		588EB7B8231F5BDB7AA09C3539D0193D /* Version.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		5A48A549B67E6896712720D8704269FE /* objective-zip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "objective-zip.modulemap"; sourceTree = "<group>"; };
+		5CD36E3BEE2237A49AB087B4A6601CA5 /* objective-zip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "objective-zip-umbrella.h"; sourceTree = "<group>"; };
+		5DD3EA75AE142957406E133A44FBB592 /* Pods-PiWebMeshModel_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PiWebMeshModel_Example-dummy.m"; sourceTree = "<group>"; };
+		61BD3E43F675B8DC2E51B1680E01097E /* OZZipReadStream+Standard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OZZipReadStream+Standard.h"; path = "Objective-Zip/OZZipReadStream+Standard.h"; sourceTree = "<group>"; };
+		63DC040239C61A48680A1FE90EAB89E3 /* Pods-PiWebMeshModel_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PiWebMeshModel_Tests-dummy.m"; sourceTree = "<group>"; };
+		6701D384E70E6B78D279437385ABFC45 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = MiniZip/zip.h; sourceTree = "<group>"; };
+		68F6B6464A1DA46BAC9AFD167FB8CC81 /* compress.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = compress.c; path = ZLib/compress.c; sourceTree = "<group>"; };
+		6AED55C94EBC46EBF7C4F6CB0761F487 /* uncompr.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = uncompr.c; path = ZLib/uncompr.c; sourceTree = "<group>"; };
+		6E8CC577F1DAE641C8178B2599A337BD /* MeshModelEdgeNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MeshModelEdgeNode.swift; path = PiWebMeshModel/Classes/MeshModelEdgeNode.swift; sourceTree = "<group>"; };
+		6ED47220B89F75EABC84783F91D75C08 /* OZZipWriteStream+Standard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OZZipWriteStream+Standard.h"; path = "Objective-Zip/OZZipWriteStream+Standard.h"; sourceTree = "<group>"; };
+		7012BF731A9B17F10D95721AA69F4588 /* objective-zip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "objective-zip-prefix.pch"; sourceTree = "<group>"; };
+		7354C81050AE5458D0739F95CF9CD7D5 /* OZFileInZipInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OZFileInZipInfo.m; path = "Objective-Zip/OZFileInZipInfo.m"; sourceTree = "<group>"; };
+		7686C0F49B2BF2BC66FCBCCE871D5294 /* crc32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crc32.h; path = ZLib/crc32.h; sourceTree = "<group>"; };
+		7D354B8E14A277439EAE66E80F6DCDB9 /* Pods-PiWebMeshModel_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PiWebMeshModel_Tests-resources.sh"; sourceTree = "<group>"; };
+		828588C50E04A6752BB0EFE308720FDF /* NSData+CRC32.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+CRC32.m"; path = "Objective-Zip/NSData+CRC32.m"; sourceTree = "<group>"; };
+		8925980A59ED4C7DAB9A2D307364F27D /* MeshModelMesh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MeshModelMesh.swift; path = PiWebMeshModel/Classes/MeshModelMesh.swift; sourceTree = "<group>"; };
+		8A2C85FC8D9BABF8AE153837A7514CDA /* trees.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = trees.h; path = ZLib/trees.h; sourceTree = "<group>"; };
+		8CF08A753104739278712D79E00B4EBE /* OZZipReadStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OZZipReadStream.m; path = "Objective-Zip/OZZipReadStream.m"; sourceTree = "<group>"; };
+		8FA9A9F6265811E762735FD1F6F065B6 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = MiniZip/unzip.c; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93B204089D7AA29F74FEDCE93CEF3336 /* deflate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = deflate.h; path = ZLib/deflate.h; sourceTree = "<group>"; };
+		972037EA68A8A0EAB650B09C455092C1 /* OZFileInZipInfo+Internals.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OZFileInZipInfo+Internals.h"; path = "Objective-Zip/OZFileInZipInfo+Internals.h"; sourceTree = "<group>"; };
+		9739666CA9409E99068ACF4DE81A42C3 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = MiniZip/ioapi.c; sourceTree = "<group>"; };
+		976938E53E237E00A0D6FB548B221ED9 /* trees.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = trees.c; path = ZLib/trees.c; sourceTree = "<group>"; };
+		9C9A97F0BDEADD879F51B621202034E7 /* Pods-PiWebMeshModel_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PiWebMeshModel_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		9D3AFD5FF90E42AE9C5F84B48910B65C /* inffixed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = inffixed.h; path = ZLib/inffixed.h; sourceTree = "<group>"; };
+		A10E77F35517E544CAF7CC313DB34797 /* Pods-PiWebMeshModel_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PiWebMeshModel_Example-resources.sh"; sourceTree = "<group>"; };
+		A1E079E63664F192A5D454EDCCF2345E /* OZZipWriteStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OZZipWriteStream.m; path = "Objective-Zip/OZZipWriteStream.m"; sourceTree = "<group>"; };
+		A2BFC606BA6448151242DBC10CA075BA /* adler32.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = adler32.c; path = ZLib/adler32.c; sourceTree = "<group>"; };
+		A42B0294EC0AAA62E671E62DD73C528A /* gzclose.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = gzclose.c; path = ZLib/gzclose.c; sourceTree = "<group>"; };
+		A672338703D91BD61540911CEB657FD1 /* infback.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = infback.c; path = ZLib/infback.c; sourceTree = "<group>"; };
+		AA6734832080B6A60085914D /* MeshModelMetadataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MeshModelMetadataParser.swift; path = PiWebMeshModel/Classes/MeshModelMetadataParser.swift; sourceTree = "<group>"; };
+		AB38885CD9A9F30ED734A74B79E37641 /* PiWebMeshModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PiWebMeshModel-umbrella.h"; sourceTree = "<group>"; };
+		ADA319947BCD28A47C66DAA63DC08486 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6CCB91D30A7D324DB876DE54A531C3F /* OZZipException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OZZipException.m; path = "Objective-Zip/OZZipException.m"; sourceTree = "<group>"; };
+		B7176BB8146433B23B58B3174C65C989 /* MeshModelMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MeshModelMetadata.swift; path = PiWebMeshModel/Classes/MeshModelMetadata.swift; sourceTree = "<group>"; };
+		B72374738C6AFF20726A3BBF35CD744A /* PiWebMeshModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PiWebMeshModel.modulemap; sourceTree = "<group>"; };
+		B7CD90DCFBAA5B5FDA59F9F8BB175D79 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8282BDE7B528A6392D64B39897D93D0 /* gzlib.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = gzlib.c; path = ZLib/gzlib.c; sourceTree = "<group>"; };
+		B91191A0A4049CCBB00AE33C69D28834 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = MiniZip/crypt.h; sourceTree = "<group>"; };
+		BE9C9FF7CED4E5CB8EB30DD6D94C7DDF /* crypt.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = crypt.c; path = MiniZip/crypt.c; sourceTree = "<group>"; };
+		C12CC29E6379BAF8C58BEA54F3889107 /* Pods-PiWebMeshModel_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PiWebMeshModel_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C2B275C884DDC0A0D7E5374CBF9A3413 /* Objective-Zip+NSError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Objective-Zip+NSError.h"; path = "Objective-Zip/Objective-Zip+NSError.h"; sourceTree = "<group>"; };
+		C698509E1F528F4B61BA7BAC8F29BE2C /* zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zlib.h; path = ZLib/zlib.h; sourceTree = "<group>"; };
+		C933AA94BCD1A8C39F7626723A9FDEF4 /* inffast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = inffast.h; path = ZLib/inffast.h; sourceTree = "<group>"; };
+		C9625F29B4C01B985E9A7B472CCE4329 /* OZZipCompressionLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OZZipCompressionLevel.h; path = "Objective-Zip/OZZipCompressionLevel.h"; sourceTree = "<group>"; };
+		C9DBB56E6531E2920436AEC402CAA8CF /* MeshModelMeshNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MeshModelMeshNode.swift; path = PiWebMeshModel/Classes/MeshModelMeshNode.swift; sourceTree = "<group>"; };
+		CB41F4A9E56F797C69B90F62FCE3C111 /* UUIDExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UUIDExtension.swift; sourceTree = "<group>"; };
+		CC7694ADD33D1A6138280EDB0EAD7885 /* Pods-PiWebMeshModel_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PiWebMeshModel_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D0039CCC85A2B6D5E6EB1350B386E4B3 /* PiWebMeshModel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = PiWebMeshModel.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D38F8AEFC7F8B20633BFB7BDACD9663E /* OZZipReadStream+NSError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OZZipReadStream+NSError.h"; path = "Objective-Zip/OZZipReadStream+NSError.h"; sourceTree = "<group>"; };
+		D5F2358E17B12529D07219674A386364 /* objective-zip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "objective-zip-dummy.m"; sourceTree = "<group>"; };
+		D803D43D61F6DA54588DC1DD5BAB5C73 /* OZZipWriteStream+NSError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OZZipWriteStream+NSError.h"; path = "Objective-Zip/OZZipWriteStream+NSError.h"; sourceTree = "<group>"; };
+		DA0281511866C8EB8A92F6AEB37472CE /* Pods-PiWebMeshModel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PiWebMeshModel_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DCF40C91EC97B4519FF983B1F6A8D0EE /* Pods-PiWebMeshModel_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PiWebMeshModel_Tests-umbrella.h"; sourceTree = "<group>"; };
+		E2191D89121672EE1E849E525BF7E925 /* DataExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		E417775D711518205164E0CC4D3925B0 /* NSData+CRC32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+CRC32.h"; path = "Objective-Zip/NSData+CRC32.h"; sourceTree = "<group>"; };
+		E44841B149804175BC0B4471A5C3F1DF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E48848F2A8D7A6894A3E2CB1D18D60BD /* Pods-PiWebMeshModel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PiWebMeshModel_Tests.modulemap"; sourceTree = "<group>"; };
+		E66E36041D360043CA09D0A0B40FC0DE /* crc32.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = crc32.c; path = ZLib/crc32.c; sourceTree = "<group>"; };
+		E718B32846F4FA88CAD53EE910AC668F /* OZZipException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OZZipException.h; path = "Objective-Zip/OZZipException.h"; sourceTree = "<group>"; };
+		E9444DD56B2A1E8288F578044C8D7FA0 /* Objective-Zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Objective-Zip.h"; path = "Objective-Zip/Objective-Zip.h"; sourceTree = "<group>"; };
+		E977C0E0DF43BAE47F75C2EEF00BFC7F /* Pods-PiWebMeshModel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PiWebMeshModel_Example.modulemap"; sourceTree = "<group>"; };
+		EA02A70193F847FB2E1F2537220D4867 /* inflate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = inflate.h; path = ZLib/inflate.h; sourceTree = "<group>"; };
+		ECA73250E67FA6CE8413A2D7D4BADA2C /* OZZipWriteStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OZZipWriteStream.h; path = "Objective-Zip/OZZipWriteStream.h"; sourceTree = "<group>"; };
+		EE81B413B50301513F0C458444A678DE /* OZZipFileMode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OZZipFileMode.h; path = "Objective-Zip/OZZipFileMode.h"; sourceTree = "<group>"; };
+		F175A7BAE6DC12526807049E3D7DC3D2 /* gzwrite.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = gzwrite.c; path = ZLib/gzwrite.c; sourceTree = "<group>"; };
+		F3D502CCE875B56ECCCCD1B3182C62EB /* inftrees.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = inftrees.h; path = ZLib/inftrees.h; sourceTree = "<group>"; };
+		F4153866B8317513622DDCF91ED3705C /* zutil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zutil.h; path = ZLib/zutil.h; sourceTree = "<group>"; };
+		F4B614E6AD7675711AB9ABC442B89595 /* zutil.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zutil.c; path = ZLib/zutil.c; sourceTree = "<group>"; };
+		F62833BED6794DDB0954971FF3577572 /* OZFileInZipInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OZFileInZipInfo.h; path = "Objective-Zip/OZFileInZipInfo.h"; sourceTree = "<group>"; };
+		F691D1A6AEA34121DBF5998BCE1A5193 /* gzguts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gzguts.h; path = ZLib/gzguts.h; sourceTree = "<group>"; };
+		F884E32EC629FE5EF84A91EB72455FA7 /* OZZipFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OZZipFile.m; path = "Objective-Zip/OZZipFile.m"; sourceTree = "<group>"; };
+		FA3F617AA43CA72058B4D87C87509B41 /* inflate.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = inflate.c; path = ZLib/inflate.c; sourceTree = "<group>"; };
+		FBA2FC92BEED70CA307DF0DCBB174F91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FCD9B15B8FBE42C83F4A9C7AF906503B /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5364D7DA09AF0F9BD14B2F1B0ACFB6C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE112FBFD92999B3837656A6542E1154 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0AF9D13EFA4C4F0DD71276DDC96D990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3BC1ED623D25098E37004B355A03264 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E165285D559E46EDDBBA28D733DA87C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854C941F76324DD707424773D5DFEDD0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F75770324EA5DF5CB225E31B54BCA275 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EFEE7A2F17567AF204103D78981E14F /* Foundation.framework in Frameworks */,
+				64861ECFA2EF38D1831007003BFC5B01 /* objective_zip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11FBF343DD515CE5F91D762739AF28F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DBC6A69E794A5A60C3693C86A776F60 /* objective_zip.framework */,
+				4020D0BCFB159F3D99A9CB6AC52E7E0A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BFEE3ADA73E4DD8A7519D54A52545CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42FB5037C30D84F3F290C748E1A21DB6 /* objective-zip */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4020D0BCFB159F3D99A9CB6AC52E7E0A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FBA2FC92BEED70CA307DF0DCBB174F91 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4026EA50AD62F1A6C7CD4598300A8585 /* PiWebMeshModel */ = {
+			isa = PBXGroup;
+			children = (
+				01332286B965602D4686F7551194D822 /* MeshModel.swift */,
+				0FD18A8912BBA32ABED6FF685753CCB2 /* MeshModelEdge.swift */,
+				6E8CC577F1DAE641C8178B2599A337BD /* MeshModelEdgeNode.swift */,
+				8925980A59ED4C7DAB9A2D307364F27D /* MeshModelMesh.swift */,
+				C9DBB56E6531E2920436AEC402CAA8CF /* MeshModelMeshNode.swift */,
+				B7176BB8146433B23B58B3174C65C989 /* MeshModelMetadata.swift */,
+				AA6734832080B6A60085914D /* MeshModelMetadataParser.swift */,
+				C4AFA00606EE3DCA00C29B20C371C7AD /* Pod */,
+				D574C51E14B591CFFC869F082F45405F /* Support */,
+				7DEC4647E5BDC25B5960658202AB71DB /* Support Files */,
+			);
+			name = PiWebMeshModel;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		42FB5037C30D84F3F290C748E1A21DB6 /* objective-zip */ = {
+			isa = PBXGroup;
+			children = (
+				A2BFC606BA6448151242DBC10CA075BA /* adler32.c */,
+				68F6B6464A1DA46BAC9AFD167FB8CC81 /* compress.c */,
+				E66E36041D360043CA09D0A0B40FC0DE /* crc32.c */,
+				7686C0F49B2BF2BC66FCBCCE871D5294 /* crc32.h */,
+				BE9C9FF7CED4E5CB8EB30DD6D94C7DDF /* crypt.c */,
+				B91191A0A4049CCBB00AE33C69D28834 /* crypt.h */,
+				48D1C95DCE0CC0EAA91CA399262ACB44 /* deflate.c */,
+				93B204089D7AA29F74FEDCE93CEF3336 /* deflate.h */,
+				A42B0294EC0AAA62E671E62DD73C528A /* gzclose.c */,
+				F691D1A6AEA34121DBF5998BCE1A5193 /* gzguts.h */,
+				B8282BDE7B528A6392D64B39897D93D0 /* gzlib.c */,
+				15356E7BC5D77473B30759C2C1B83EC4 /* gzread.c */,
+				F175A7BAE6DC12526807049E3D7DC3D2 /* gzwrite.c */,
+				A672338703D91BD61540911CEB657FD1 /* infback.c */,
+				435DF9FA285F91EC27F01CA34A076039 /* inffast.c */,
+				C933AA94BCD1A8C39F7626723A9FDEF4 /* inffast.h */,
+				9D3AFD5FF90E42AE9C5F84B48910B65C /* inffixed.h */,
+				FA3F617AA43CA72058B4D87C87509B41 /* inflate.c */,
+				EA02A70193F847FB2E1F2537220D4867 /* inflate.h */,
+				3E96453342300825E5C328BDC8544966 /* inftrees.c */,
+				F3D502CCE875B56ECCCCD1B3182C62EB /* inftrees.h */,
+				9739666CA9409E99068ACF4DE81A42C3 /* ioapi.c */,
+				5872617FD7AA29BE9EBD08DD421E818A /* ioapi.h */,
+				E417775D711518205164E0CC4D3925B0 /* NSData+CRC32.h */,
+				828588C50E04A6752BB0EFE308720FDF /* NSData+CRC32.m */,
+				3BAED8D6745D6BA242198C8A0E6D69D0 /* NSDate+DOSDate.h */,
+				1779B8ED0CC8B7818FF1BC8A39200171 /* NSDate+DOSDate.m */,
+				E9444DD56B2A1E8288F578044C8D7FA0 /* Objective-Zip.h */,
+				C2B275C884DDC0A0D7E5374CBF9A3413 /* Objective-Zip+NSError.h */,
+				F62833BED6794DDB0954971FF3577572 /* OZFileInZipInfo.h */,
+				7354C81050AE5458D0739F95CF9CD7D5 /* OZFileInZipInfo.m */,
+				972037EA68A8A0EAB650B09C455092C1 /* OZFileInZipInfo+Internals.h */,
+				C9625F29B4C01B985E9A7B472CCE4329 /* OZZipCompressionLevel.h */,
+				E718B32846F4FA88CAD53EE910AC668F /* OZZipException.h */,
+				B6CCB91D30A7D324DB876DE54A531C3F /* OZZipException.m */,
+				363924D17A621BA38E31C1A9CF79DE02 /* OZZipException+Internals.h */,
+				12B3A065F6652FAC8F00E2B530E467C1 /* OZZipFile.h */,
+				F884E32EC629FE5EF84A91EB72455FA7 /* OZZipFile.m */,
+				588C880B03BE6001848CC4A2C837D11D /* OZZipFile+NSError.h */,
+				42B4C91904EF220763C7927BC5BCD50A /* OZZipFile+Standard.h */,
+				EE81B413B50301513F0C458444A678DE /* OZZipFileMode.h */,
+				44706997203EB2EBD44FD6DFB7AF38AF /* OZZipReadStream.h */,
+				8CF08A753104739278712D79E00B4EBE /* OZZipReadStream.m */,
+				09BF46B88807C528AB0B47D95546D84C /* OZZipReadStream+Internals.h */,
+				D38F8AEFC7F8B20633BFB7BDACD9663E /* OZZipReadStream+NSError.h */,
+				61BD3E43F675B8DC2E51B1680E01097E /* OZZipReadStream+Standard.h */,
+				ECA73250E67FA6CE8413A2D7D4BADA2C /* OZZipWriteStream.h */,
+				A1E079E63664F192A5D454EDCCF2345E /* OZZipWriteStream.m */,
+				3B1C063B50CECEC1E9CE26A7EE4AFA30 /* OZZipWriteStream+Internals.h */,
+				D803D43D61F6DA54588DC1DD5BAB5C73 /* OZZipWriteStream+NSError.h */,
+				6ED47220B89F75EABC84783F91D75C08 /* OZZipWriteStream+Standard.h */,
+				976938E53E237E00A0D6FB548B221ED9 /* trees.c */,
+				8A2C85FC8D9BABF8AE153837A7514CDA /* trees.h */,
+				6AED55C94EBC46EBF7C4F6CB0761F487 /* uncompr.c */,
+				8FA9A9F6265811E762735FD1F6F065B6 /* unzip.c */,
+				34B29238F834398F72F7A98E43D31C4A /* unzip.h */,
+				10F43C22E5B9C580249FF0A5E88405CE /* zconf.h */,
+				2AEB5A81B2BF2FD88579613AC83AFF1B /* zip.c */,
+				6701D384E70E6B78D279437385ABFC45 /* zip.h */,
+				C698509E1F528F4B61BA7BAC8F29BE2C /* zlib.h */,
+				F4B614E6AD7675711AB9ABC442B89595 /* zutil.c */,
+				F4153866B8317513622DDCF91ED3705C /* zutil.h */,
+				5BFCAFE22A91A5CA7E0AE85795387E4C /* Support Files */,
+			);
+			path = "objective-zip";
+			sourceTree = "<group>";
+		};
+		5BFCAFE22A91A5CA7E0AE85795387E4C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADA319947BCD28A47C66DAA63DC08486 /* Info.plist */,
+				5A48A549B67E6896712720D8704269FE /* objective-zip.modulemap */,
+				0E36DF6B3BA296DFA1E01BBCD724592B /* objective-zip.xcconfig */,
+				D5F2358E17B12529D07219674A386364 /* objective-zip-dummy.m */,
+				7012BF731A9B17F10D95721AA69F4588 /* objective-zip-prefix.pch */,
+				5CD36E3BEE2237A49AB087B4A6601CA5 /* objective-zip-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/objective-zip";
+			sourceTree = "<group>";
+		};
+		7A176631882B3F3D87F66EC95840E319 /* Pods-PiWebMeshModel_Example */ = {
+			isa = PBXGroup;
+			children = (
+				B7CD90DCFBAA5B5FDA59F9F8BB175D79 /* Info.plist */,
+				E977C0E0DF43BAE47F75C2EEF00BFC7F /* Pods-PiWebMeshModel_Example.modulemap */,
+				1362F5C98DC431F8AD23DB53304E8694 /* Pods-PiWebMeshModel_Example-acknowledgements.markdown */,
+				129E482AE06219C96EBC40C6803A8540 /* Pods-PiWebMeshModel_Example-acknowledgements.plist */,
+				5DD3EA75AE142957406E133A44FBB592 /* Pods-PiWebMeshModel_Example-dummy.m */,
+				C12CC29E6379BAF8C58BEA54F3889107 /* Pods-PiWebMeshModel_Example-frameworks.sh */,
+				A10E77F35517E544CAF7CC313DB34797 /* Pods-PiWebMeshModel_Example-resources.sh */,
+				48CB2344F3C77996D02A68C1AB6B3666 /* Pods-PiWebMeshModel_Example-umbrella.h */,
+				57339D569E1CBE0FA0BE0EDC4CC58558 /* Pods-PiWebMeshModel_Example.debug.xcconfig */,
+				4A06A634984D4999F50A7B64BF6DDAD8 /* Pods-PiWebMeshModel_Example.release.xcconfig */,
+			);
+			name = "Pods-PiWebMeshModel_Example";
+			path = "Target Support Files/Pods-PiWebMeshModel_Example";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				F33F35A45C65B4808F7D41ECD08C956F /* Development Pods */,
+				11FBF343DD515CE5F91D762739AF28F4 /* Frameworks */,
+				3BFEE3ADA73E4DD8A7519D54A52545CD /* Pods */,
+				DD090F8AFF821EF9B83872BEDE5915BD /* Products */,
+				B90FC11C023958CA3BC6CD08B2ED13AF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7DEC4647E5BDC25B5960658202AB71DB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F8EBACC183DB337431790707E7E0DE2 /* Info.plist */,
+				B72374738C6AFF20726A3BBF35CD744A /* PiWebMeshModel.modulemap */,
+				4D883F59400EC0343D1A70975DFC4EDF /* PiWebMeshModel.xcconfig */,
+				28F1354B2685DD162D5A61F88B65F765 /* PiWebMeshModel-dummy.m */,
+				546CDCDFEB6DAA2655C09AF607CDD227 /* PiWebMeshModel-prefix.pch */,
+				AB38885CD9A9F30ED734A74B79E37641 /* PiWebMeshModel-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PiWebMeshModel";
+			sourceTree = "<group>";
+		};
+		94D11D1B3D7558E3CF6301BA729E22DE /* Pods-PiWebMeshModel_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				18CBB3E5777697C1F6C879C99A161F51 /* Info.plist */,
+				E48848F2A8D7A6894A3E2CB1D18D60BD /* Pods-PiWebMeshModel_Tests.modulemap */,
+				56B1941F8C071E575D10BF375E597B06 /* Pods-PiWebMeshModel_Tests-acknowledgements.markdown */,
+				CC7694ADD33D1A6138280EDB0EAD7885 /* Pods-PiWebMeshModel_Tests-acknowledgements.plist */,
+				63DC040239C61A48680A1FE90EAB89E3 /* Pods-PiWebMeshModel_Tests-dummy.m */,
+				9C9A97F0BDEADD879F51B621202034E7 /* Pods-PiWebMeshModel_Tests-frameworks.sh */,
+				7D354B8E14A277439EAE66E80F6DCDB9 /* Pods-PiWebMeshModel_Tests-resources.sh */,
+				DCF40C91EC97B4519FF983B1F6A8D0EE /* Pods-PiWebMeshModel_Tests-umbrella.h */,
+				17C2A346F36AD64978E55363EEDF4409 /* Pods-PiWebMeshModel_Tests.debug.xcconfig */,
+				DA0281511866C8EB8A92F6AEB37472CE /* Pods-PiWebMeshModel_Tests.release.xcconfig */,
+			);
+			name = "Pods-PiWebMeshModel_Tests";
+			path = "Target Support Files/Pods-PiWebMeshModel_Tests";
+			sourceTree = "<group>";
+		};
+		B90FC11C023958CA3BC6CD08B2ED13AF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A176631882B3F3D87F66EC95840E319 /* Pods-PiWebMeshModel_Example */,
+				94D11D1B3D7558E3CF6301BA729E22DE /* Pods-PiWebMeshModel_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C4AFA00606EE3DCA00C29B20C371C7AD /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E44841B149804175BC0B4471A5C3F1DF /* LICENSE */,
+				D0039CCC85A2B6D5E6EB1350B386E4B3 /* PiWebMeshModel.podspec */,
+				1D7ED900BD69904335B003EB795905F3 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		D574C51E14B591CFFC869F082F45405F /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				E2191D89121672EE1E849E525BF7E925 /* DataExtension.swift */,
+				FCD9B15B8FBE42C83F4A9C7AF906503B /* Logger.swift */,
+				CB41F4A9E56F797C69B90F62FCE3C111 /* UUIDExtension.swift */,
+				588EB7B8231F5BDB7AA09C3539D0193D /* Version.swift */,
+			);
+			name = Support;
+			path = PiWebMeshModel/Classes/Support;
+			sourceTree = "<group>";
+		};
+		DD090F8AFF821EF9B83872BEDE5915BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3061CFB1F86ABD78D84E153E2DECB377 /* objective_zip.framework */,
+				0FCEBC9E25C1D29BF7AD37F12A76CF76 /* PiWebMeshModel.framework */,
+				576E684A86087F1B9D8C64E14B460953 /* Pods_PiWebMeshModel_Example.framework */,
+				4E9B594A1D69D27A7CB434B3A2DD457E /* Pods_PiWebMeshModel_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F33F35A45C65B4808F7D41ECD08C956F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4026EA50AD62F1A6C7CD4598300A8585 /* PiWebMeshModel */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0B8660ABE083C36F9B841B786782E8A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B61239F84FDFC34A8F5797A7E912A6C5 /* Pods-PiWebMeshModel_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30BDAEB7B12A4B328073F0E1021BE3B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804C0B90736611716FD1473FD4432042 /* Pods-PiWebMeshModel_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A40DFB8D95C9A8ADD481EC848C0E31EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2F111FB87614E71BC55419EF080879E /* PiWebMeshModel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C01FD9AFF492EA204D1F0AE4E82B5611 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3EF01036EB751518288166693575506 /* crc32.h in Headers */,
+				3BDD4EA8FE234F0C75CB6B10B3B64DF6 /* crypt.h in Headers */,
+				EE99040B52ED11E2173C25597D4AC051 /* deflate.h in Headers */,
+				EB2885238E5A4831F54642AEFA101BCB /* gzguts.h in Headers */,
+				A8A9DE5350B181C0F7F4F9593F714E13 /* inffast.h in Headers */,
+				484F7C02B1899BB601AA260F88B62BDD /* inffixed.h in Headers */,
+				A0C593DD4A3AB62E4F2375E538CAD2D6 /* inflate.h in Headers */,
+				6170360ADCB36967DF4264F5600CEF64 /* inftrees.h in Headers */,
+				9D0E86958F57E64B87BA45D6CC122E09 /* ioapi.h in Headers */,
+				30EB88A918609E866214E483DED58EA7 /* NSData+CRC32.h in Headers */,
+				A9FC29340ABBB51DF38A8732D1E16951 /* NSDate+DOSDate.h in Headers */,
+				FAE01B0A84A704646F8370083A56CCE5 /* Objective-Zip+NSError.h in Headers */,
+				1A6E451A877F8A686FC350ADC6CCAD6A /* objective-zip-umbrella.h in Headers */,
+				A0D76AB4BA0D364F1CF0E86032383790 /* Objective-Zip.h in Headers */,
+				44FC87625E781B967A47A52B1A4DB56C /* OZFileInZipInfo+Internals.h in Headers */,
+				86BF80F2FF688E49401832DBEFA19518 /* OZFileInZipInfo.h in Headers */,
+				33B293D2AB9862A828D5361D1C8A2AA3 /* OZZipCompressionLevel.h in Headers */,
+				13035EB46F849D3387F6E51531212A40 /* OZZipException+Internals.h in Headers */,
+				F9799D8840679179978BCFC6F3AB7492 /* OZZipException.h in Headers */,
+				9A1F4BB3CC0AF35D7DD067B8A0F3105E /* OZZipFile+NSError.h in Headers */,
+				FDC150F34B16F5AEA66C31B9962E53D7 /* OZZipFile+Standard.h in Headers */,
+				C9C66909D6D3F0DAB7E19767760B7D22 /* OZZipFile.h in Headers */,
+				D25470E12A8CD7A000DEBC85F5EB8B68 /* OZZipFileMode.h in Headers */,
+				2788C6173AAD485D86CDF7C647F4FF9E /* OZZipReadStream+Internals.h in Headers */,
+				79A0AECBD76D463E81B40550F00F414D /* OZZipReadStream+NSError.h in Headers */,
+				2C6770BF5EBC7687E64260FFED009EBE /* OZZipReadStream+Standard.h in Headers */,
+				8AC9D4231A4CF33B60E3D63B03BFF100 /* OZZipReadStream.h in Headers */,
+				03BDFA318C0CF6DE7EF91C8BA48E5163 /* OZZipWriteStream+Internals.h in Headers */,
+				A8C567DC14078C8849B65BCCAA4D5343 /* OZZipWriteStream+NSError.h in Headers */,
+				FE6E93411BA107713EC3F67592C7DFD1 /* OZZipWriteStream+Standard.h in Headers */,
+				0F9BED6C2B244E3A54ABE9015DE0BFA4 /* OZZipWriteStream.h in Headers */,
+				FE2A31C3D78CE980AE1FC921E6D4816A /* trees.h in Headers */,
+				A935F0C39135767EB77CF427166FBE65 /* unzip.h in Headers */,
+				E6F50C4A36E3598245EF08DEF07AEAAD /* zconf.h in Headers */,
+				87FF64AA2C08EF9D11FDB2DD2A16192B /* zip.h in Headers */,
+				CCC07BADFE2239EB3F374BAF62D100D3 /* zlib.h in Headers */,
+				D7BF6860756CF57BDB1D32EBE92D9191 /* zutil.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2E86B4251A39C9BEF4F46F34AAA192ED /* PiWebMeshModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3699B3340867D620E17EB1E54676E1CF /* Build configuration list for PBXNativeTarget "PiWebMeshModel" */;
+			buildPhases = (
+				0842D0C64C7D8B521CCDD0BE766673EA /* Sources */,
+				F75770324EA5DF5CB225E31B54BCA275 /* Frameworks */,
+				A40DFB8D95C9A8ADD481EC848C0E31EE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FB6AC582F8CA4A2691426E5E6555C26 /* PBXTargetDependency */,
+			);
+			name = PiWebMeshModel;
+			productName = PiWebMeshModel;
+			productReference = 0FCEBC9E25C1D29BF7AD37F12A76CF76 /* PiWebMeshModel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		37DA7BAB8315804CD141EFE568323082 /* Pods-PiWebMeshModel_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6C0DEFC49C60F4DD148A7EA53934260 /* Build configuration list for PBXNativeTarget "Pods-PiWebMeshModel_Tests" */;
+			buildPhases = (
+				09D18E1F66A19EAEC72D67DFA795BCA1 /* Sources */,
+				E165285D559E46EDDBBA28D733DA87C4 /* Frameworks */,
+				0B8660ABE083C36F9B841B786782E8A6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06419F792400F569B6D78EF4A895BA16 /* PBXTargetDependency */,
+			);
+			name = "Pods-PiWebMeshModel_Tests";
+			productName = "Pods-PiWebMeshModel_Tests";
+			productReference = 4E9B594A1D69D27A7CB434B3A2DD457E /* Pods_PiWebMeshModel_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DED8AA45EE4031EF955FD1A42F1421A6 /* objective-zip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3048486D288E73BE30D7A65AB1BA9EC /* Build configuration list for PBXNativeTarget "objective-zip" */;
+			buildPhases = (
+				E810BB5CC4E81D60DE2B667D1EFF7311 /* Sources */,
+				5364D7DA09AF0F9BD14B2F1B0ACFB6C9 /* Frameworks */,
+				C01FD9AFF492EA204D1F0AE4E82B5611 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "objective-zip";
+			productName = "objective-zip";
+			productReference = 3061CFB1F86ABD78D84E153E2DECB377 /* objective_zip.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9159458680A314483479D68BA39DC9A /* Pods-PiWebMeshModel_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 755B4A7017A352317C9C957E9817967A /* Build configuration list for PBXNativeTarget "Pods-PiWebMeshModel_Example" */;
+			buildPhases = (
+				C7732727A205770AD26612E1476A16CC /* Sources */,
+				D0AF9D13EFA4C4F0DD71276DDC96D990 /* Frameworks */,
+				30BDAEB7B12A4B328073F0E1021BE3B4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A386B7AD7DD02AC29C7E7424A4B47305 /* PBXTargetDependency */,
+				E5BC266A68BEFC11F451C20CDDDC6D3B /* PBXTargetDependency */,
+			);
+			name = "Pods-PiWebMeshModel_Example";
+			productName = "Pods-PiWebMeshModel_Example";
+			productReference = 576E684A86087F1B9D8C64E14B460953 /* Pods_PiWebMeshModel_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					DED8AA45EE4031EF955FD1A42F1421A6 = {
+						LastSwiftMigration = 0930;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = DD090F8AFF821EF9B83872BEDE5915BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DED8AA45EE4031EF955FD1A42F1421A6 /* objective-zip */,
+				2E86B4251A39C9BEF4F46F34AAA192ED /* PiWebMeshModel */,
+				E9159458680A314483479D68BA39DC9A /* Pods-PiWebMeshModel_Example */,
+				37DA7BAB8315804CD141EFE568323082 /* Pods-PiWebMeshModel_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0842D0C64C7D8B521CCDD0BE766673EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFBC7D68A4196774BA9F95FB8C368823 /* DataExtension.swift in Sources */,
+				57032812EBAFBACE2B5F463A0049AF2F /* Logger.swift in Sources */,
+				AFEFCE59DB1145A66548DFAD9D60D9EE /* MeshModel.swift in Sources */,
+				9F9B5738FCF9A2D701F64203DFEFD17F /* MeshModelEdge.swift in Sources */,
+				A41BDAA48C7A6C1AB9D7EA7E6624C8BB /* MeshModelEdgeNode.swift in Sources */,
+				A5E3104205DAC9D77435C0902ED0281C /* MeshModelMesh.swift in Sources */,
+				83B6A642102F2513002DB4FACB569A43 /* MeshModelMeshNode.swift in Sources */,
+				F51DAA344EE4A1AE4675E55C6E5DB9E4 /* MeshModelMetadata.swift in Sources */,
+				BFC70B17E690ABCA0D8333BA4B17CD53 /* PiWebMeshModel-dummy.m in Sources */,
+				BF5D5178D6B5766550725F39E1214472 /* UUIDExtension.swift in Sources */,
+				F68D71B5757C14C40EDF38D8DD2B039D /* Version.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D18E1F66A19EAEC72D67DFA795BCA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3DF75B16116B5ACCDD53D6C4F31A8B8 /* Pods-PiWebMeshModel_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7732727A205770AD26612E1476A16CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56CE759C7E42399B8E17D6A8F44E5B66 /* Pods-PiWebMeshModel_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E810BB5CC4E81D60DE2B667D1EFF7311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A02A868210F8C14C65241C984BF484B0 /* adler32.c in Sources */,
+				04FB8FD1BDCBC7AD752412AE16C89D26 /* compress.c in Sources */,
+				09D739831320910F669BE8DCAA04B084 /* crc32.c in Sources */,
+				9735EF60CDE84FDABEDF9DE9A2219627 /* crypt.c in Sources */,
+				D212AADB366F3A503AE4633658B2F86B /* deflate.c in Sources */,
+				2638F4C3511927F4699943C7979A07D1 /* gzclose.c in Sources */,
+				5FAB070E8D885B95D3123D9FADA4CD43 /* gzlib.c in Sources */,
+				8BB167D063862378FE36B246C373EFCE /* gzread.c in Sources */,
+				1623C3C9825C9F242F5B132DF7F4E5E7 /* gzwrite.c in Sources */,
+				A7CF4149006AE1524BD4414E02AFAC7D /* infback.c in Sources */,
+				11DC0AE5D100F4594ECBB845618D6F5E /* inffast.c in Sources */,
+				6BD2D8AB15C495BDA836F834541122C3 /* inflate.c in Sources */,
+				1F307DAB3A927F872FE2B7E616CCA6E7 /* inftrees.c in Sources */,
+				A3775EABA52E62C1940BC0EB9FC23521 /* ioapi.c in Sources */,
+				E2C0CBCB752B9DD2CB2D0E3AD9F74451 /* NSData+CRC32.m in Sources */,
+				B5E35B2E0369897C8F201F0132892A33 /* NSDate+DOSDate.m in Sources */,
+				AA6734842080B6A60085914D /* MeshModelMetadataParser.swift in Sources */,
+				DA9515691B0F06E9B8F7F83BC51F8BF8 /* objective-zip-dummy.m in Sources */,
+				38B8F7F3AC0F6B72C2361D1A753EBD3D /* OZFileInZipInfo.m in Sources */,
+				4C60503CF09A44618F38E84AB888CBB8 /* OZZipException.m in Sources */,
+				8162BD35EDB2E38E93BAA6D4C837AC7C /* OZZipFile.m in Sources */,
+				E60CF8152F548EEFD304CC8D4FF882B1 /* OZZipReadStream.m in Sources */,
+				DA67512C4ED9B88E7BE59ACCE5E55BDD /* OZZipWriteStream.m in Sources */,
+				5C4E1914D657576B091127D36A029A66 /* trees.c in Sources */,
+				FF927A2211F1CC30429CADE0F540A46A /* uncompr.c in Sources */,
+				939201F9B4CF3B503622CE6C8F2385D4 /* unzip.c in Sources */,
+				6F0949E324A0DFA6253BA62475B5BAF1 /* zip.c in Sources */,
+				0353B5A885C7C1400D08D6421FC3F17C /* zutil.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06419F792400F569B6D78EF4A895BA16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PiWebMeshModel_Example";
+			target = E9159458680A314483479D68BA39DC9A /* Pods-PiWebMeshModel_Example */;
+			targetProxy = 4C49C51F1025C9911A76044C22A7B134 /* PBXContainerItemProxy */;
+		};
+		1FB6AC582F8CA4A2691426E5E6555C26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "objective-zip";
+			target = DED8AA45EE4031EF955FD1A42F1421A6 /* objective-zip */;
+			targetProxy = FAC53D21C23ACF9143C8FB2812BA7A3C /* PBXContainerItemProxy */;
+		};
+		A386B7AD7DD02AC29C7E7424A4B47305 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PiWebMeshModel;
+			target = 2E86B4251A39C9BEF4F46F34AAA192ED /* PiWebMeshModel */;
+			targetProxy = 1D18AC0CEF54A064DD5567EDE959C33F /* PBXContainerItemProxy */;
+		};
+		E5BC266A68BEFC11F451C20CDDDC6D3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "objective-zip";
+			target = DED8AA45EE4031EF955FD1A42F1421A6 /* objective-zip */;
+			targetProxy = 529C45CE134EDCB0BB5FB2D21BFEF542 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1DA9CB327D01A0AF163B3A9C45A1173F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E36DF6B3BA296DFA1E01BBCD724592B /* objective-zip.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/objective-zip/objective-zip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/objective-zip/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/objective-zip/objective-zip.modulemap";
+				PRODUCT_MODULE_NAME = objective_zip;
+				PRODUCT_NAME = objective_zip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1E7E2DE6DA004AB76460D71A69FD60B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E36DF6B3BA296DFA1E01BBCD724592B /* objective-zip.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/objective-zip/objective-zip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/objective-zip/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/objective-zip/objective-zip.modulemap";
+				PRODUCT_MODULE_NAME = objective_zip;
+				PRODUCT_NAME = objective_zip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2612204CEBCA951A1D2B92FE983C87EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A06A634984D4999F50A7B64BF6DDAD8 /* Pods-PiWebMeshModel_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PiWebMeshModel_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PiWebMeshModel_Example/Pods-PiWebMeshModel_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6D66464AE72CEC58B02C681A53FA7311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57339D569E1CBE0FA0BE0EDC4CC58558 /* Pods-PiWebMeshModel_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PiWebMeshModel_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PiWebMeshModel_Example/Pods-PiWebMeshModel_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F1D6D4AE1A606F46386547D0E366737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17C2A346F36AD64978E55363EEDF4409 /* Pods-PiWebMeshModel_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PiWebMeshModel_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PiWebMeshModel_Tests/Pods-PiWebMeshModel_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DF0378A0968056C739D80662557F9A46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D883F59400EC0343D1A70975DFC4EDF /* PiWebMeshModel.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PiWebMeshModel/PiWebMeshModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PiWebMeshModel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PiWebMeshModel/PiWebMeshModel.modulemap";
+				PRODUCT_MODULE_NAME = PiWebMeshModel;
+				PRODUCT_NAME = PiWebMeshModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E61B72416CB785478F7A6FDF85207C4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA0281511866C8EB8A92F6AEB37472CE /* Pods-PiWebMeshModel_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PiWebMeshModel_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PiWebMeshModel_Tests/Pods-PiWebMeshModel_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E9CD5A9AA9E6E2955C38498BE2BC7B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D883F59400EC0343D1A70975DFC4EDF /* PiWebMeshModel.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PiWebMeshModel/PiWebMeshModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PiWebMeshModel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PiWebMeshModel/PiWebMeshModel.modulemap";
+				PRODUCT_MODULE_NAME = PiWebMeshModel;
+				PRODUCT_NAME = PiWebMeshModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
+				08638A96A528B1EC32DE62F8A728389D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3699B3340867D620E17EB1E54676E1CF /* Build configuration list for PBXNativeTarget "PiWebMeshModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9CD5A9AA9E6E2955C38498BE2BC7B6E /* Debug */,
+				DF0378A0968056C739D80662557F9A46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		755B4A7017A352317C9C957E9817967A /* Build configuration list for PBXNativeTarget "Pods-PiWebMeshModel_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D66464AE72CEC58B02C681A53FA7311 /* Debug */,
+				2612204CEBCA951A1D2B92FE983C87EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6C0DEFC49C60F4DD148A7EA53934260 /* Build configuration list for PBXNativeTarget "Pods-PiWebMeshModel_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F1D6D4AE1A606F46386547D0E366737 /* Debug */,
+				E61B72416CB785478F7A6FDF85207C4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3048486D288E73BE30D7A65AB1BA9EC /* Build configuration list for PBXNativeTarget "objective-zip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DA9CB327D01A0AF163B3A9C45A1173F /* Debug */,
+				1E7E2DE6DA004AB76460D71A69FD60B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

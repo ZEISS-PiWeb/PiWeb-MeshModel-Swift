@@ -14,6 +14,9 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		AA673480208095D90085914D /* Cube.meshModel in Resources */ = {isa = PBXBuildFile; fileRef = AA67347D208095D90085914D /* Cube.meshModel */; };
+		AA673481208095D90085914D /* Panel.meshModel in Resources */ = {isa = PBXBuildFile; fileRef = AA67347E208095D90085914D /* Panel.meshModel */; };
+		AA673482208095D90085914D /* MetalPart.meshModel in Resources */ = {isa = PBXBuildFile; fileRef = AA67347F208095D90085914D /* MetalPart.meshModel */; };
 		EEDD064BEB9CAE225AB1D3AF /* Pods_PiWebMeshModel_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88525BDFFF7FFB0E98ACD90A /* Pods_PiWebMeshModel_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +32,7 @@
 
 /* Begin PBXFileReference section */
 		04856ABA0DA0EA19096B2241 /* Pods_PiWebMeshModel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PiWebMeshModel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		14953DB88D90B28897D87261 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		14953DB88D90B28897D87261 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* PiWebMeshModel_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiWebMeshModel_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,12 +44,15 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		88525BDFFF7FFB0E98ACD90A /* Pods_PiWebMeshModel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PiWebMeshModel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E512707484160D77FDE1D35 /* PiWebMeshModel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PiWebMeshModel.podspec; path = ../PiWebMeshModel.podspec; sourceTree = "<group>"; };
+		8E512707484160D77FDE1D35 /* PiWebMeshModel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PiWebMeshModel.podspec; path = ../PiWebMeshModel.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9408767AE98C01B1586A07E9 /* Pods-PiWebMeshModel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiWebMeshModel_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PiWebMeshModel_Example/Pods-PiWebMeshModel_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9BE4FF44330836682CCF50FE /* Pods-PiWebMeshModel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiWebMeshModel_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PiWebMeshModel_Example/Pods-PiWebMeshModel_Example.release.xcconfig"; sourceTree = "<group>"; };
+		AA67347D208095D90085914D /* Cube.meshModel */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cube.meshModel; sourceTree = "<group>"; };
+		AA67347E208095D90085914D /* Panel.meshModel */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panel.meshModel; sourceTree = "<group>"; };
+		AA67347F208095D90085914D /* MetalPart.meshModel */ = {isa = PBXFileReference; lastKnownFileType = file; path = MetalPart.meshModel; sourceTree = "<group>"; };
 		BBF557D3EB4979F422C4E613 /* Pods-PiWebMeshModel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiWebMeshModel_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PiWebMeshModel_Tests/Pods-PiWebMeshModel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE8BF9A22FC7EFC9101144FE /* Pods-PiWebMeshModel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiWebMeshModel_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PiWebMeshModel_Tests/Pods-PiWebMeshModel_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D4F31A6ACFE2552CA6B53090 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D4F31A6ACFE2552CA6B53090 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 		607FACD21AFB9204008FA782 /* Example for PiWebMeshModel */ = {
 			isa = PBXGroup;
 			children = (
+				AA67347C208095A70085914D /* Resources */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -159,6 +166,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AA67347C208095A70085914D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA67347D208095D90085914D /* Cube.meshModel */,
+				AA67347F208095D90085914D /* MetalPart.meshModel */,
+				AA67347E208095D90085914D /* Panel.meshModel */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -212,6 +229,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 9J7484M5EV;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -246,8 +264,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				AA673481208095D90085914D /* Panel.meshModel in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				AA673480208095D90085914D /* Cube.meshModel in Resources */,
+				AA673482208095D90085914D /* MetalPart.meshModel in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,10 +308,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PiWebMeshModel_Example/Pods-PiWebMeshModel_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/PiWebMeshModel/PiWebMeshModel.framework",
+				"${BUILT_PRODUCTS_DIR}/objective-zip/objective_zip.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PiWebMeshModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/objective_zip.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -469,13 +492,16 @@
 			baseConfigurationReference = 9408767AE98C01B1586A07E9 /* Pods-PiWebMeshModel_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9J7484M5EV;
 				INFOPLIST_FILE = PiWebMeshModel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zeiss-izm.PiWebMeshModel-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -484,13 +510,16 @@
 			baseConfigurationReference = 9BE4FF44330836682CCF50FE /* Pods-PiWebMeshModel_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9J7484M5EV;
 				INFOPLIST_FILE = PiWebMeshModel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zeiss-izm.PiWebMeshModel-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

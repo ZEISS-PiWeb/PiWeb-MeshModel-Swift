@@ -1,0 +1,30 @@
+{
+  "name": "PiWebMeshModel",
+  "version": "0.1.0",
+  "summary": "Framework to read and display CAD data for the ZEISS PiWeb quality data management system.",
+  "description": "Framework to read and display CAD data for the ZEISS PiWeb quality data management system.",
+  "homepage": "https://github.com/ZEISS-PiWeb/PiWebMeshModel",
+  "license": {
+    "type": "BSD",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "David Dombrowe": "dombrowe@zeiss-izm.de"
+  },
+  "source": {
+    "path": "."
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": [
+    "PiWebMeshModel/Classes/*",
+    "PiWebMeshModel/Classes/**/*"
+  ],
+  "dependencies": {
+    "objective-zip": [
+      "~> 1.0"
+    ]
+  },
+  "swift_version": "4.1"
+}
