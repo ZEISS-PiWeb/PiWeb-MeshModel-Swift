@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		378D475600BFBCDC5F3712C1 /* Pods_PiWebMeshModel_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04856ABA0DA0EA19096B2241 /* Pods_PiWebMeshModel_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -22,7 +21,6 @@
 		AA9FC71D2087476A0027CB20 /* MetalPart.meshModel in Resources */ = {isa = PBXBuildFile; fileRef = AA9FC716208747410027CB20 /* MetalPart.meshModel */; };
 		AA9FC71E2087476E0027CB20 /* MultiPartModel.meshModel in Resources */ = {isa = PBXBuildFile; fileRef = AA9FC714208747410027CB20 /* MultiPartModel.meshModel */; };
 		AA9FC71F208747720027CB20 /* Panel.meshModel in Resources */ = {isa = PBXBuildFile; fileRef = AA9FC715208747410027CB20 /* Panel.meshModel */; };
-		EEDD064BEB9CAE225AB1D3AF /* Pods_PiWebMeshModel_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88525BDFFF7FFB0E98ACD90A /* Pods_PiWebMeshModel_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04856ABA0DA0EA19096B2241 /* Pods_PiWebMeshModel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PiWebMeshModel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14953DB88D90B28897D87261 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* PiWebMeshModel_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiWebMeshModel_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,9 +58,7 @@
 		AA9FC716208747410027CB20 /* MetalPart.meshModel */ = {isa = PBXFileReference; lastKnownFileType = file; path = MetalPart.meshModel; sourceTree = "<group>"; };
 		AA9FC717208747410027CB20 /* Cube.meshModel */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cube.meshModel; sourceTree = "<group>"; };
 		AD750C78EA5CB13D3CAFE459 /* Pods-PiWebMeshModel_Example-PiWebMeshModel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiWebMeshModel_Example-PiWebMeshModel_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PiWebMeshModel_Example-PiWebMeshModel_Tests/Pods-PiWebMeshModel_Example-PiWebMeshModel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BBF557D3EB4979F422C4E613 /* Pods-PiWebMeshModel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiWebMeshModel_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PiWebMeshModel_Tests/Pods-PiWebMeshModel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCBE332BF6971D083026A77D /* Pods_PiWebMeshModel_Example_PiWebMeshModel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PiWebMeshModel_Example_PiWebMeshModel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE8BF9A22FC7EFC9101144FE /* Pods-PiWebMeshModel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiWebMeshModel_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PiWebMeshModel_Tests/Pods-PiWebMeshModel_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D4F31A6ACFE2552CA6B53090 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEDD064BEB9CAE225AB1D3AF /* Pods_PiWebMeshModel_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378D475600BFBCDC5F3712C1 /* Pods_PiWebMeshModel_Tests.framework in Frameworks */,
 				65E87C315A74BAA137E9A95F /* Pods_PiWebMeshModel_Example_PiWebMeshModel_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,8 +86,6 @@
 			children = (
 				9408767AE98C01B1586A07E9 /* Pods-PiWebMeshModel_Example.debug.xcconfig */,
 				9BE4FF44330836682CCF50FE /* Pods-PiWebMeshModel_Example.release.xcconfig */,
-				BBF557D3EB4979F422C4E613 /* Pods-PiWebMeshModel_Tests.debug.xcconfig */,
-				CE8BF9A22FC7EFC9101144FE /* Pods-PiWebMeshModel_Tests.release.xcconfig */,
 				AD750C78EA5CB13D3CAFE459 /* Pods-PiWebMeshModel_Example-PiWebMeshModel_Tests.debug.xcconfig */,
 				75CBBE2D31FE55ED08B25897 /* Pods-PiWebMeshModel_Example-PiWebMeshModel_Tests.release.xcconfig */,
 			);
@@ -177,7 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				88525BDFFF7FFB0E98ACD90A /* Pods_PiWebMeshModel_Example.framework */,
-				04856ABA0DA0EA19096B2241 /* Pods_PiWebMeshModel_Tests.framework */,
 				BCBE332BF6971D083026A77D /* Pods_PiWebMeshModel_Example_PiWebMeshModel_Tests.framework */,
 			);
 			name = Frameworks;
