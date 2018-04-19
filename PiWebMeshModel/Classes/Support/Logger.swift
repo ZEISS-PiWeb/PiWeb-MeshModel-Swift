@@ -1,7 +1,4 @@
 //
-//  Logger.swift
-//  PiWeb-MeshModel-Demo
-//
 //  Created by David Dombrowe on 11.04.18.
 //  Copyright © 2018 Carl Zeiss Innovationszentrum für Messtechnik GmbH. All rights reserved.
 //
