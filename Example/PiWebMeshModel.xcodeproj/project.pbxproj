@@ -582,10 +582,7 @@
 			baseConfigurationReference = AD750C78EA5CB13D3CAFE459 /* Pods-PiWebMeshModel_Example-PiWebMeshModel_Tests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 9J7484M5EV;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -605,10 +602,7 @@
 			baseConfigurationReference = 75CBBE2D31FE55ED08B25897 /* Pods-PiWebMeshModel_Example-PiWebMeshModel_Tests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 9J7484M5EV;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
