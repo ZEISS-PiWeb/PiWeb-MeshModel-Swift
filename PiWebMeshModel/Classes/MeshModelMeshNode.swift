@@ -10,26 +10,27 @@ import Foundation
 import SceneKit
 
 class MeshModelMeshNode: SCNNode {
+    private let maximumPointsPerNode = 50000
     
     convenience init(meshes: [MeshModelMesh]) {
         self.init()
-
+        
         let nodes = SCNNode()
         var positionCount = 0
-
+        
         for mesh in meshes {
-            if positionCount + mesh.positions.count > 50000 {
-                self.addChildNode(nodes.flattenedClone())
+            if positionCount + mesh.positions.count > maximumPointsPerNode {
+                
+                addChildNode(nodes.flattenedClone())
                 nodes.childNodes.forEach { $0.removeFromParentNode() }
                 positionCount = 0
             }
-
-            let meshNode = self.createNodeForMesh(mesh: mesh)
-            nodes.addChildNode(meshNode)
-
+            
+            nodes.addChildNode(createNode(mesh: mesh))
+            
             positionCount += mesh.positions.count
         }
-
+        
         if !nodes.childNodes.isEmpty {
             self.addChildNode(nodes.flattenedClone())
         }
@@ -39,9 +40,9 @@ class MeshModelMeshNode: SCNNode {
         return Int(color.x * 255.0) | Int(color.y * 255.0) << 8 | Int(color.z * 255.0) << 16 | Int(color.w * 255.0) << 24
     }
     
-    func createNodeForMesh(mesh: MeshModelMesh) -> SCNNode {
+    func createNode(mesh: MeshModelMesh) -> SCNNode {
         var indizes: [Int32] = mesh.indizes
-
+        
         let indexData = Data(bytes: &indizes, count: MemoryLayout<Int32>.size * indizes.count)
         let positionSource = SCNGeometrySource(vertices: mesh.positions)
         let normalSource = SCNGeometrySource(normals: mesh.normals)
@@ -51,9 +52,9 @@ class MeshModelMeshNode: SCNNode {
             primitiveType: .triangles,
             primitiveCount: indizes.count / 3,
             bytesPerIndex: MemoryLayout<Int32>.size)
-
+        
         let color = mesh.color
-
+        
         let geo = SCNGeometry(sources: [positionSource, normalSource], elements: [element])
         geo.firstMaterial?.isDoubleSided = true
         geo.firstMaterial?.diffuse.contents = UIColor(red: CGFloat(color.x), green: CGFloat(color.y), blue: CGFloat(color.z), alpha: CGFloat(color.w))
