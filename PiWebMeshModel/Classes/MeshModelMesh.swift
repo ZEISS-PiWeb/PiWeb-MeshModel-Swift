@@ -61,40 +61,38 @@ class MeshModelMesh {
     }
 
     private func readPositions(data: Data, offset: inout Int, fileVersion: Version) {
-        if data.readBoolean(offset: &offset) {
-            self.positions = data.readArray(offset: &offset) as [SCNVector3]
-        }
+        guard data.readBoolean(offset: &offset) else { return }
+        
+        self.positions = data.readArray(offset: &offset) as [SCNVector3]
     }
 
     private func readNormals(data: Data, offset: inout Int, fileVersion: Version) {
-        if data.readBoolean(offset: &offset) {
-            self.normals = data.readArray(offset: &offset) as [SCNVector3]
-        }
+        guard data.readBoolean(offset: &offset) else { return }
+        
+        self.normals = data.readArray(offset: &offset) as [SCNVector3]
     }
 
     private func readIndices(data: Data, offset: inout Int, fileVersion: Version) {
-        if data.readBoolean(offset: &offset) {
-            self.indizes = data.readArray(offset: &offset) as [Int32]
-        }
+        guard data.readBoolean(offset: &offset) else { return }
+        
+        self.indizes = data.readArray(offset: &offset) as [Int32]
     }
     
     private func readLayer(data: Data, offset: inout Int, fileVersion: Version) {
-        if data.readBoolean(offset: &offset) {
-            
-            let count = data.readInt32(offset: &offset)
-            for _ in 0 ..< count {
-                self.layer.append(data.readString(offset: &offset))
-            }
+        guard data.readBoolean(offset: &offset) else { return }
+        
+        let count = data.readInt32(offset: &offset)
+        for _ in 0 ..< count {
+            self.layer.append(data.readString(offset: &offset))
         }
     }
 
     private func readTextureCoordinates(data: Data, offset: inout Int, fileVersion: Version) {
-        if fileVersion >= Version(major: 2, minor: 2) {
-            if data.readBoolean(offset: &offset) {
-                // Ignored for now
-                _ = data.readArray(offset: &offset) as [SCNVector2]
-            }
-        }
+        guard fileVersion >= Version(major: 2, minor: 2) else  { return }
+        guard data.readBoolean(offset: &offset) else { return }
+        
+        // Ignored for now
+        _ = data.readArray(offset: &offset) as [SCNVector2]
     }
 }
 
