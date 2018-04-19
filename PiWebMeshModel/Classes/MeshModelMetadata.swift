@@ -34,7 +34,6 @@ public class MeshModelMetadata: NSObject {
         
         parser.parse()
     }
-    
 }
 
 extension MeshModelMetadata: XMLParserDelegate {

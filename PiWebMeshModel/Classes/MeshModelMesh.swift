@@ -10,8 +10,7 @@ import Foundation
 import GLKit
 import SceneKit
 
-class MeshModelMesh: CustomStringConvertible {
-    
+class MeshModelMesh {
     var name = ""
     var layer = [String]()
     var color = SCNVector4(x: 0.267, y: 0.306, z: 0.435, w: 1.000)
@@ -19,10 +18,6 @@ class MeshModelMesh: CustomStringConvertible {
     var normals = [SCNVector3]()
     var indizes = [Int32]()
     
-    var description: String {
-        return "Mesh \(self.name) (\(self.indizes.count) triangles)"
-    }
-
     convenience init(data: Data, offset: inout Int, fileVersion: Version) {
         self.init()
         
@@ -39,31 +34,30 @@ class MeshModelMesh: CustomStringConvertible {
     }
     
     private func readName(data: Data, offset: inout Int, fileVersion: Version) {
-        if fileVersion >= Version(major: 2, minor: 1) {
-            self.name = data.readString(offset: &offset)
-        }
+        guard fileVersion >= Version(major: 2, minor: 1) else { return }
+
+        self.name = data.readString(offset: &offset)
     }
 
     private func readGlobalColor(data: Data, offset: inout Int) {
-        if data.readBoolean(offset: &offset) {
-            let col = data.readInt32(offset: &offset)
-            
-            let green = Float(col >> 8 & 0xff)
-            let blue = Float(col & 0xff)
-            let red = Float(col >> 16 & 0xff)
-            let alpha = Float((col >> 24) & 0xff)
-            
-            self.color = SCNVector4(x: red / 255.0, y: green / 255.0, z: blue / 255.0, w: alpha / 255.0)
-        }
+        guard data.readBoolean(offset: &offset) else { return }
+
+        let col = data.readInt32(offset: &offset)
+
+        let green = Float(col >> 8 & 0xff)
+        let blue = Float(col & 0xff)
+        let red = Float(col >> 16 & 0xff)
+        let alpha = Float((col >> 24) & 0xff)
+
+        self.color = SCNVector4(x: red / 255.0, y: green / 255.0, z: blue / 255.0, w: alpha / 255.0)
     }
 
     private func readPerPositionColors(data: Data, offset: inout Int, fileVersion: Version) {
-        if fileVersion >= Version(major: 3, minor: 3) {
-            if data.readBoolean(offset: &offset) {
-                // ignored for now
-                _ = data.readArray(offset: &offset) as [SCNVector4]
-            }
-        }
+        guard fileVersion >= Version(major: 3, minor: 3) else { return }
+        guard data.readBoolean(offset: &offset) else { return }
+
+        // ignored for now
+        _ = data.readArray(offset: &offset) as [SCNVector4]
     }
 
     private func readPositions(data: Data, offset: inout Int, fileVersion: Version) {
@@ -101,6 +95,12 @@ class MeshModelMesh: CustomStringConvertible {
                 _ = data.readArray(offset: &offset) as [SCNVector2]
             }
         }
+    }
+}
+
+extension MeshModelMesh: CustomStringConvertible {
+    var description: String {
+        return "Mesh \(self.name) (\(self.indizes.count) triangles)"
     }
 }
 

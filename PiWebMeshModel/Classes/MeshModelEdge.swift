@@ -10,16 +10,12 @@ import Foundation
 import GLKit
 import SceneKit
 
-class MeshModelEdge: CustomStringConvertible {
+class MeshModelEdge {
     
     var name = ""
     var layer = [String]()
     var points = [SCNVector3]()
     var color: UIColor?
-    
-    var description: String {
-        return "Edge \(self.name) (\(self.points.count) points)"
-    }
     
     convenience init(data: Data, offset: inout Int, fileVersion: Version) {
         self.init()
@@ -53,5 +49,11 @@ class MeshModelEdge: CustomStringConvertible {
                 layer.append(data.readString(offset: &offset))
             }
         }
+    }
+}
+
+extension MeshModelEdge: CustomStringConvertible {
+    var description: String {
+        return "Edge \(self.name) (\(self.points.count) points)"
     }
 }

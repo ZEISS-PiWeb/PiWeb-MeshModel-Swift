@@ -13,10 +13,10 @@ import objective_zip
 import os.log
 
 public class MeshModel: SCNNode {
-
-    public var metadata: MeshModelMetadata?
     private let meshNode = SCNNode()
     private let edgeNode = SCNNode()
+
+    public var metadata: MeshModelMetadata?
 
     public convenience init?(data: Data) {
         self.init()
@@ -25,31 +25,25 @@ public class MeshModel: SCNNode {
             .temporaryDirectory
             .appendingPathComponent(UUID.init().uuidString)
             .path
-        if FileManager.default.createFile(atPath: tempFilename, contents: data) {
-            defer {
-                do {
-                    try FileManager.default.removeItem(atPath: tempFilename)
-                } catch {
-                    os_log("Unable to remove temporary meshmodel file: @%", log: Logger.cad, type: .error, tempFilename)
-                }
-            }
 
-            let filenameWithoutPath = URL(fileURLWithPath: tempFilename).lastPathComponent
-            let modelLoaded = loadModel(filename: tempFilename, unobfuscatedFilename: filenameWithoutPath)
-
-            if !modelLoaded {
-                return nil
+        guard FileManager.default.createFile(atPath: tempFilename, contents: data) else { return nil }
+        defer {
+            do {
+                try FileManager.default.removeItem(atPath: tempFilename)
+            } catch {
+                os_log("Unable to remove temporary meshmodel file: @%", log: Logger.cad, type: .error, tempFilename)
             }
         }
+
+        let filenameWithoutPath = URL(fileURLWithPath: tempFilename).lastPathComponent
+        guard loadModel(filename: tempFilename, unobfuscatedFilename: filenameWithoutPath) else { return nil }
     }
 
     public convenience init?(filename: String) {
         self.init()
 
         let filenameWithoutPath = URL(fileURLWithPath: filename).lastPathComponent
-        if !loadModel(filename: filename, unobfuscatedFilename: filenameWithoutPath) {
-            return nil
-        }
+        guard loadModel(filename: filename, unobfuscatedFilename: filenameWithoutPath) else { return nil }
     }
     
     private func loadModel(filename: String, unobfuscatedFilename: String) -> Bool {
@@ -111,67 +105,65 @@ public class MeshModel: SCNNode {
     }
     
     private func readZipEntry(fromArchive archive: OZZipFile, name: String) -> Data? {
-        if archive.locateFile(inZip: name) {
-            let entry = archive.getCurrentFileInZipInfo()
-            os_log("Reading entry %@ of size %d (compressed: %d bytes).", log: Logger.cad, type: .info, entry.name, entry.length, entry.size)
-            
-            // Read data in 32K chunks (otherwise the zip library will fail with an error)
-            let data = NSMutableData(capacity: Int(entry.length))!
-            let buffer = NSMutableData(length: 32*1024)!
-            let stream = archive.readCurrentFileInZip()
-            
-            var bytesRead = stream.readData(withBuffer: buffer)
-            var totalBytes = bytesRead
-            
-            while bytesRead > 0 {
-                data.append(buffer.subdata(with: NSRange.init(location: 0, length: Int(bytesRead)) ))
-
-                bytesRead = stream.readData(withBuffer: buffer)
-                totalBytes += bytesRead
-            }
-            if totalBytes != UInt(data.length) {
-                os_log("Inconsistent state: Zip entry contains %d but only read %d bytes from zip file.", log: Logger.cad, type: .error, data.length, bytesRead)
-            }
-            stream.finishedReading()
-            
-            return data as Data
-        } else {
+        guard archive.locateFile(inZip: name) else {
             os_log("No entry with name '%@' found in zip file.", log: Logger.cad, type: .error, name)
+            return nil
         }
-        return nil
+
+        let entry = archive.getCurrentFileInZipInfo()
+        os_log("Reading entry %@ of size %d (compressed: %d bytes).", log: Logger.cad, type: .info, entry.name, entry.length, entry.size)
+
+        // Read data in 32K chunks (otherwise the zip library will fail with an error)
+        let data = NSMutableData(capacity: Int(entry.length))!
+        let buffer = NSMutableData(length: 32*1024)!
+        let stream = archive.readCurrentFileInZip()
+
+        var bytesRead = stream.readData(withBuffer: buffer)
+        var totalBytes = bytesRead
+
+        while bytesRead > 0 {
+            data.append(buffer.subdata(with: NSRange.init(location: 0, length: Int(bytesRead))))
+
+            bytesRead = stream.readData(withBuffer: buffer)
+            totalBytes += bytesRead
+        }
+        if totalBytes != UInt(data.length) {
+            os_log("Inconsistent state: Zip entry contains %d but only read %d bytes from zip file.", log: Logger.cad, type: .error, data.length, bytesRead)
+        }
+        stream.finishedReading()
+
+        return data as Data
     }
     
     private func readEdges(data: Data) {
+        guard let fileVersion = self.metadata?.fileVersion else { return }
+
         var offset: Int = 0
         let edgeCount = data.readInt32(offset: &offset)
+        guard edgeCount > 0 else { return }
 
-        if let fileVersion = self.metadata?.fileVersion {
-            var edges = [MeshModelEdge]()
-            for _ in 0 ..< edgeCount {
-                edges.append(MeshModelEdge(data: data, offset: &offset, fileVersion: fileVersion))
-            }
-            self.edgeNode.addChildNode(MeshModelEdgeNode(edges: edges))
+        var edges = [MeshModelEdge]()
+        edges.reserveCapacity(edgeCount)
+
+        for _ in 0 ..< edgeCount {
+            edges.append(MeshModelEdge(data: data, offset: &offset, fileVersion: fileVersion))
         }
+        self.edgeNode.addChildNode(MeshModelEdgeNode(edges: edges))
     }
     
     private func readMeshes(data: Data) {
-        if let fileVersion = self.metadata?.fileVersion {
+        guard let fileVersion = self.metadata?.fileVersion else { return }
             
-            var offset: Int = 0
+        var offset: Int = 0
+        let meshCount = data.readInt32(offset: &offset)
+        guard meshCount > 0 else { return }
 
-            let meshCount = data.readInt32(offset: &offset)
-            if meshCount == 0 {
-                return
-            }
+        var meshes = [MeshModelMesh]()
+        meshes.reserveCapacity(meshCount)
 
-            var meshes = [MeshModelMesh]()
-            meshes.reserveCapacity(meshCount)
-            
-            for _ in 0 ..< meshCount {
-                meshes.append(MeshModelMesh(data: data, offset: &offset, fileVersion: fileVersion))
-            }
-
-            self.meshNode.addChildNode(MeshModelMeshNode(meshes: meshes))
+        for _ in 0 ..< meshCount {
+            meshes.append(MeshModelMesh(data: data, offset: &offset, fileVersion: fileVersion))
         }
+        self.meshNode.addChildNode(MeshModelMeshNode(meshes: meshes))
     }
 }
