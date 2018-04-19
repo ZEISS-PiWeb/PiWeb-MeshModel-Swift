@@ -19,7 +19,6 @@
 		AA673482208095D90085914D /* MetalPart.meshModel in Resources */ = {isa = PBXBuildFile; fileRef = AA67347F208095D90085914D /* MetalPart.meshModel */; };
 		AA9FC71C208747670027CB20 /* Cube.meshModel in Resources */ = {isa = PBXBuildFile; fileRef = AA9FC717208747410027CB20 /* Cube.meshModel */; };
 		AA9FC71D2087476A0027CB20 /* MetalPart.meshModel in Resources */ = {isa = PBXBuildFile; fileRef = AA9FC716208747410027CB20 /* MetalPart.meshModel */; };
-		AA9FC71E2087476E0027CB20 /* MultiPartModel.meshModel in Resources */ = {isa = PBXBuildFile; fileRef = AA9FC714208747410027CB20 /* MultiPartModel.meshModel */; };
 		AA9FC71F208747720027CB20 /* Panel.meshModel in Resources */ = {isa = PBXBuildFile; fileRef = AA9FC715208747410027CB20 /* Panel.meshModel */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +52,6 @@
 		AA67347D208095D90085914D /* Cube.meshModel */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cube.meshModel; sourceTree = "<group>"; };
 		AA67347E208095D90085914D /* Panel.meshModel */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panel.meshModel; sourceTree = "<group>"; };
 		AA67347F208095D90085914D /* MetalPart.meshModel */ = {isa = PBXFileReference; lastKnownFileType = file; path = MetalPart.meshModel; sourceTree = "<group>"; };
-		AA9FC714208747410027CB20 /* MultiPartModel.meshModel */ = {isa = PBXFileReference; lastKnownFileType = file; path = MultiPartModel.meshModel; sourceTree = "<group>"; };
 		AA9FC715208747410027CB20 /* Panel.meshModel */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panel.meshModel; sourceTree = "<group>"; };
 		AA9FC716208747410027CB20 /* MetalPart.meshModel */ = {isa = PBXFileReference; lastKnownFileType = file; path = MetalPart.meshModel; sourceTree = "<group>"; };
 		AA9FC717208747410027CB20 /* Cube.meshModel */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cube.meshModel; sourceTree = "<group>"; };
@@ -188,7 +186,6 @@
 			children = (
 				AA9FC717208747410027CB20 /* Cube.meshModel */,
 				AA9FC716208747410027CB20 /* MetalPart.meshModel */,
-				AA9FC714208747410027CB20 /* MultiPartModel.meshModel */,
 				AA9FC715208747410027CB20 /* Panel.meshModel */,
 			);
 			path = MeshModelTestData;
@@ -298,7 +295,6 @@
 			files = (
 				AA9FC71C208747670027CB20 /* Cube.meshModel in Resources */,
 				AA9FC71D2087476A0027CB20 /* MetalPart.meshModel in Resources */,
-				AA9FC71E2087476E0027CB20 /* MultiPartModel.meshModel in Resources */,
 				AA9FC71F208747720027CB20 /* Panel.meshModel in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

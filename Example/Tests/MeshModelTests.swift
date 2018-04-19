@@ -4,7 +4,6 @@ import XCTest
 class MeshModelTests: XCTestCase {
     
     let modelsToTest = [ "Cube", "MetalPart", "Panel" ]
-    let multiPartModel = "MultiPartModel"
     
     func test_meshModelLoading_isWorkingProperly() {
         for modelName in modelsToTest {
@@ -20,13 +19,6 @@ class MeshModelTests: XCTestCase {
         measure {
             let _ = MeshModel.init(filename: filename)
         }
-    }
-    
-    func test_multiPartModels_doNotCrashApplication() {
-        
-        // Meshmodel-Dateien mit mehreren Untermodellen sollten nicht zu einem Crash führen
-        let filename = MeshModelTests.read(model: multiPartModel)!
-        XCTAssertNil(MeshModel(filename: filename))
     }
     
     static func read(model: String) -> String? {
