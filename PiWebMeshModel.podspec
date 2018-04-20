@@ -21,11 +21,10 @@ Pod::Spec.new do |s|
 PiWebMeshModel is a framework to read CAD visualization data in MeshModel format for the ZEISS PiWeb quality data management system.
                        DESC
 
-  s.homepage         = 'https://github.com/ZEISS-PiWeb/PiWebMeshModel'
+  s.homepage         = 'https://github.com/ZEISS-PiWeb/PiWeb-MeshModel-Swift'
   s.license          = { :type => 'BSD', :file => 'LICENSE' }
   s.author           = { 'David Dombrowe' => 'dombrowe@zeiss-izm.de' }
-  s.source       = { :path => '.' }
-  # s.source           = { :git => 'https://github.com/ZEISS-PiWeb/PiWebMeshModel', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/ZEISS-PiWeb/PiWeb-MeshModel-Swift.git', :tag => s.version.to_s }
   s.ios.deployment_target = '11.0'
   s.swift_version = '4.1'
   s.source_files = 'PiWebMeshModel/Classes/*', 'PiWebMeshModel/Classes/**/*'
