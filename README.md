@@ -25,10 +25,10 @@ pod 'PiWebMeshModel'
 import SceneKit
 import PiWebMeshModel
 
-let model = MeshModel.init(filename: "MetalPart.meshModel")
+let model = MeshModel(filename: "MetalPart.meshModel")
 
 let scene = SCNScene()
-scene.rootNode.addChildNode(model)
+scene.rootNode.addChildNode(model.node)
 sceneView.scene = scene
 
 ```

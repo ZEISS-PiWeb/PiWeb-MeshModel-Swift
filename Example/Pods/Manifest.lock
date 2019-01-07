@@ -1,24 +1,23 @@
 PODS:
-  - objective-zip (1.0.5)
   - PiWebMeshModel (0.1.0):
-    - objective-zip (~> 1.0)
+    - ZIPFoundation (~> 0.9)
+  - ZIPFoundation (0.9.6)
 
 DEPENDENCIES:
-  - objective-zip (~> 1.0)
   - PiWebMeshModel (from `../`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - objective-zip
+  https://github.com/cocoapods/specs.git:
+    - ZIPFoundation
 
 EXTERNAL SOURCES:
   PiWebMeshModel:
     :path: "../"
 
 SPEC CHECKSUMS:
-  objective-zip: 41b1408cebffceb6b9d15ad691506707e390d359
-  PiWebMeshModel: a3661f9ad31cbeef5438d661b43c940bbb466f78
+  PiWebMeshModel: 0c19e25793b79d156173aa79c4f26668a7d63bd3
+  ZIPFoundation: 68c35eb2637c21abe56dc60b3277636443bc1501
 
-PODFILE CHECKSUM: c4dda1cdf05bc47b17ab61f4b57598549a28f7c0
+PODFILE CHECKSUM: 0210d2f1c8b9501e1ffc349339301caa0c69900c
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3

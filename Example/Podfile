@@ -1,17 +1,10 @@
-target 'PiWebMeshModel_Example' do
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Example' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-  platform :ios, '11.0'
 
-def standard_pods
+  # Pods for Example
   pod 'PiWebMeshModel', :path => '../'
-end
-
-  pod 'objective-zip', '~> 1.0'
-  standard_pods
-
-  target 'PiWebMeshModel_Tests' do
-    standard_pods
-
-    
-  end
 end
