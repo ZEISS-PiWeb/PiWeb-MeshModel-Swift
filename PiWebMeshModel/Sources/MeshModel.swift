@@ -18,7 +18,7 @@ public struct MeshModel {
 public class PiWebMeshModel {
     private(set) public var metadata = PiWebMeshModelMetadata()
     private var model = MeshModel()
-    private var modelMutators = [Handler]()
+    private var modelMutators = [MeshModelMutator]()
     private let unobfuscatedFilename: String
     private var cachedNode = SCNNode()
     private var isDirty = true
@@ -28,15 +28,15 @@ public class PiWebMeshModel {
             return cachedNode
         }
         
+        let model = modelMutators.reduce(self.model, { (result, mutator) in
+            return mutator(result)
+        })
+        
         let node = SCNNode()
         let meshNode = MeshNode(meshes: model.meshes)
         meshNode.name = "Mesh"
         let edgeNode = EdgeNode(edges: model.edges)
         edgeNode.name =  "Edge"
-        
-        let model = modelMutators.reduce(self.model, { (result, mutator) in
-           return mutator(result)
-        })
         
         node.addChildNode(meshNode)
         node.addChildNode(edgeNode)

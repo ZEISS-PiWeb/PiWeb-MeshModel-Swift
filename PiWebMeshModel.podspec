@@ -12,4 +12,5 @@ Pod::Spec.new do |s|
   s.source_files = "PiWebMeshModel/Sources/**/*.swift"
   s.dependency "ZIPFoundation", "~> 0.9"
   s.ios.deployment_target = '11.0'
+  s.swift_version = '4.2'
 end
