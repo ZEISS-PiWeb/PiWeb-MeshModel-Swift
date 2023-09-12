@@ -1,15 +1,24 @@
-# PiWebMeshModel
+# PiWeb MeshModel (for Swift)
 
-<img style="display:block;margin:auto;" src="Documentation/Logo.png">
+| ![Zeiss IQS Logo](Documentation/logo_128x128.png) | The **PiWeb MeshModel library** provides an easy to use interface for reading and especially writing PiWeb meshmodel data used by the quality data management system [ZEISS PiWeb](http://www.zeiss.com/industrial-metrology/en_de/products/software/piweb.html). |
+|-|:-|
 
-## Overview
+To read more about the MeshModel format: https://github.com/ZEISS-PiWeb/PiWeb-MeshModel
 
-PiWebMeshModel is a framework to read CAD visualization data in MeshModel format for the ZEISS PiWeb quality data management system. To read more about the MeshModel format: https://github.com/ZEISS-PiWeb/PiWeb-MeshModel
 
+# Overview
+
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+
+<a id="markdown-requirements" name="requirements"></a>
 ## Requirements
 
 * iOS 11
 
+<a id="markdown-installation" name="installation"></a>
 ## Installation
 
 PiWebMeshModel is available through [CocoaPods](http://cocoapods.org). To install
@@ -19,6 +28,7 @@ it, simply add the following line to your Podfile:
 pod 'PiWebMeshModel'
 ```
 
+<a id="markdown-usage" name="usage"></a>
 ## Usage
 
 ```Swift
@@ -43,8 +53,13 @@ An example project and examples for MeshModel files are included with this repos
 
 ## Author
 
-David Dombrowe, dombrowe@zeiss-izm.de
+David Dombrowe.
 
 ## License
 
 PiWebMeshModel is available under the BSD license. See the LICENSE file for more info.
+
+
+# Contributing
+
+This repository makes use of resuable workflows from [ZEISS-PiWeb/github-actions](https://github.com/ZEISS-PiWeb/github-actions). Read the documentation (especially about automated semantic versioning) before committing any changes.
